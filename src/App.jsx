@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ModeMenu from './modes/ModeMenu';
-import ClassicMode from './modes/ClassicMode';
-import SkulleteMode from './modes/SkulleteMode';
-import SilhouetteMode from './modes/SilhouetteMode';
+import ModeMenu from './pages/ModeMenu';
+import ClassicMode from './pages/ClassicMode';
+import SkulletteMode from './pages/SkulletteMode';
+import SilhouetteMode from './pages/SilhouetteMode';
 import InfoModal from './components/InfoModal'; // Traemos el modal aquí
 
 const App = () => {
@@ -42,7 +42,7 @@ const App = () => {
       <main>
         {currentMode === 'menu' && <ModeMenu onSelectMode={setCurrentMode} />}
         {currentMode === 'classic' && <ClassicMode />}
-        {currentMode === 'skullete' && <SkulleteMode />}
+        {currentMode === 'skullette' && <SkulletteMode />}
         {currentMode === 'silhouette' && <SilhouetteMode />}
       </main>
 
@@ -51,7 +51,7 @@ const App = () => {
 
       {/* Pie de página con el Disclaimer Legal */}
       <footer style={{ textAlign: 'center', marginTop: '50px', fontSize: '11px', color: '#555', padding: '10px' }}>
-        <p>MonsterHighdle es un juego gratuito hecho por fans para fans. No está afiliado, respaldado ni asociado con Mattel, Inc. Monster High y todas las marcas relacionadas son propiedad de Mattel.</p>
+        <p>Disclaimer: MonsterHighdle is a free fan-made game made by a fan for fans in which I get no profit from. It's not affiliated with or endorsed by Mattel, Inc. Monster High and all related trademarks are the property of Mattel.</p>
       </footer>
 
     </div>

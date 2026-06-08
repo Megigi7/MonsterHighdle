@@ -1,0 +1,27 @@
+[
+  {
+    "id": "draculaura",
+    "name": "Draculaura",
+    "gender": "Femenino",
+    "species": "Vampiro",
+    "firstAppearance": "2010",
+    "nDolls": "50",
+    "hairColor": "Negro / Rosa",
+    "hasPet": "Sí",
+    "image": "",
+    "skullette": ""
+  },
+  {
+    "id": "frankie-stein",
+    "name": "Frankie Stein",
+    "gender": "Femenino",
+    "species": "Zombi",
+    "firstAppearance": "2010",
+    "nDolls": "50",
+    "hairColor": "Negro / Blanco",
+    "hasPet": "Sí",
+    "image": "",
+    "skullette": ""
+  }
+]
+

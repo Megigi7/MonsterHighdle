@@ -1,5 +1,5 @@
 import React from 'react';
-import { compareCharacters } from '../utils/gameLogic';
+import { compareAttributes } from '../utils/gameLogic';
 
 const ModalResult = ({ isOpen, isWon, secretCharacter, guesses, onClose }) => {
   if (!isOpen) return null;
@@ -9,7 +9,7 @@ const ModalResult = ({ isOpen, isWon, secretCharacter, guesses, onClose }) => {
     let emojiShareText = `MonsterHighdle 💀🎀 Tries: ${isWon ? guesses.length : 'X'}\n\n`;
 
     guesses.forEach((guess) => {
-      const feedback = compareCharacters(guess, secretCharacter);
+      const feedback = compareAttributes(guess, secretCharacter);
       let rowEmojis = '';
 
       // Mapeamos cada atributo a un emoji de color

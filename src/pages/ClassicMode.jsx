@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import charactersData from './data/characters.json';
-import SearchBar from './components/SearchBar';
-import Board from './components/Board';
-import InfoModal from './components/InfoModal';
-import ModalResult from './components/ModalResult';
+import charactersData from '../data/characters.json';
+import SearchBar from '../components/SearchBar';
+import Board from '../components/Board';
+import InfoModal from '../components/InfoModal';
+import ModalResult from '../components/ModalResult';
 
 const App = () => {
   // --- ESTADOS DEL JUEGO ---

@@ -3,7 +3,7 @@ import charactersData from '../data/characters.json';
 import SearchBar from '../components/SearchBar';
 import ModalResult from '../components/ModalResult';
 
-const SkulleteMode = () => {
+const SkulletteMode = () => {
   const [secretCharacter, setSecretCharacter] = useState(null);
   const [guesses, setGuesses] = useState([]);
   const [gameStatus, setGameStatus] = useState('playing'); // 'playing' o 'won'
@@ -12,7 +12,7 @@ const SkulleteMode = () => {
   // Controla si el filtro Blanco y Negro está activo (activado por defecto)
   const [isBlackAndWhite, setIsBlackAndWhite] = useState(true);
 
-  // Elegir el Skullete secreto al cargar la página
+  // Elegir el Skullette secreto al cargar la página
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * charactersData.length);
     setSecretCharacter(charactersData[randomIndex]);
@@ -31,12 +31,12 @@ const SkulleteMode = () => {
     }
   };
 
-  if (!secretCharacter) return <div style={{ color: 'white', textAlign: 'center' }}>Loading Skullete...</div>;
+  if (!secretCharacter) return <div style={{ color: 'white', textAlign: 'center' }}>Loading Skullette...</div>;
 
   return (
     <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px', textAlign: 'center' }}>
-      <h2 className="game-title" style={{ fontSize: '32px', marginBottom: '20px' }}>Skullete</h2>
-      <p style={{ color: '#aaa' }}>Whos Skullete is this?</p>
+      <h2 className="game-title" style={{ fontSize: '32px', marginBottom: '20px' }}>Skullette</h2>
+      <p style={{ color: '#aaa' }}>Whos Skullette is this?</p>
 
       {/* Botón Interruptor para el Filtro de Color */}
       <div style={{ margin: '15px 0' }}>
@@ -49,12 +49,12 @@ const SkulleteMode = () => {
         </button>
       </div>
 
-      {/* Imagen del Skullete Secreto con Filtro Condicional */}
-      <div className="skullete-display-container">
+      {/* Imagen del Skullette Secreto con Filtro Condicional */}
+      <div className="skullette-display-container">
         <img 
-          src={secretCharacter.skullete} 
-          alt="Skullete Secret" 
-          className="skullete-image"
+          src={secretCharacter.skullette} 
+          alt="Skullette Secret" 
+          className="skullette-image"
           style={{ 
             // Si isBlackAndWhite es true, aplica el filtro de escala de grises al 100%
             filter: isBlackAndWhite 
@@ -78,13 +78,13 @@ const SkulleteMode = () => {
       )}
 
       {/* Lista de intentos simplificada */}
-      <div className="skullete-guesses-list" style={{ marginTop: '30px' }}>
+      <div className="skullette-guesses-list" style={{ marginTop: '30px' }}>
         {guesses.slice(0).reverse().map((guess, index) => {
           const isCorrect = guess.id === secretCharacter.id;
           return (
             <div 
               key={index} 
-              className={`skullete-guess-row ${isCorrect ? 'correct' : 'incorrect'}`}
+              className={`skullette-guess-row ${isCorrect ? 'correct' : 'incorrect'}`}
             >
               <img src={guess.image} alt="" />
               <span>{guess.name}</span>
@@ -106,4 +106,4 @@ const SkulleteMode = () => {
   );
 };
 
-export default SkulleteMode;
+export default SkulletteMode;
