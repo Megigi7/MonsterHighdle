@@ -1,395 +1,111 @@
-/* -------------- STYLES - Row -------------- */
-.cell {
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  font-size: 14px;
-  border: 2px solid #333;
-  color: white;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
-.info-cell {
-  background-color: #1a1a1a;
-  flex-direction: column;
-  font-size: 12px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
 }
 
-/* Estados de los atributos */
-.correct {
-  background-color: #28a745; /* Verde éxito */
-  border-color: #1e7e34;
-}
-
-.partial {
-  background-color: #ffc107; /* Amarillo parcial */
-  border-color: #d39e00;
-  color: black; /* Para que se lea bien sobre amarillo */
-}
-
-.incorrect {
-  background-color: #dc3545; /* Rojo fallo */
-  border-color: #bd2130;
-}
-
-/* -------------- STYLES - SearchBar -------------- */
-.search-input {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #ff007f; /* Rosa Fucsia */
-  background-color: #000;
-  color: white;
-  border-radius: 25px;
-  outline: none;
-  font-size: 16px;
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.3);
-}
-
-.search-input:focus {
-  box-shadow: 0 0 20px rgba(255, 0, 127, 0.6);
-}
-
-/* Lista desplegable de sugerencias */
-.suggestions-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  list-style: none;
-  padding: 0;
-  margin: 5px 0 0;
-  max-height: 200px;
-  overflow-y: auto;
-  z-index: 100;
-  border-radius: 10px;
-}
-
-.suggestions-list li {
-  padding: 10px;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #333;
-}
-
-.suggestions-list li:hover {
-  background-color: #ff007f;
-  color: white;
-}
-
-/* Personalizar la barra de desplazamiento (Scrollbar) */
-.suggestions-list::-webkit-scrollbar {
-  width: 8px;
-}
-.suggestions-list::-webkit-scrollbar-thumb {
-  background: #ff007f;
-  border-radius: 10px;
-}
-
-/* -------------- STYLES - InfoModal -------------- */
-/* Fondo oscuro translúcido detrás del modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
-}
-
-/* Caja del contenido del modal */
-.modal-content {
-  background-color: #121212;
-  border: 3px solid #ff007f; /* Rosa Fucsia */
-  box-shadow: 0 0 25px rgba(255, 0, 127, 0.5);
-  color: white;
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 500px;
-  width: 90%;
-  position: relative;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.modal-content h2 {
-  color: #ff007f;
-  margin-top: 0;
-  text-align: center;
-}
-
-.modal-content hr {
-  border: 0;
-  border-top: 1px solid #333;
-  margin: 15px 0;
-}
-
-/* Botón de cerrar (X) */
-.close-button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  color: #aaa;
-  font-size: 28px;
-  cursor: pointer;
-}
-.close-button:hover {
-  color: #ff007f;
-}
-
-/* Ejemplos de colores */
-.example-row {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-.example-box {
-  width: 80px;
-  padding: 5px;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 4px;
-  font-size: 12px;
-}
-.text-partial {
-  color: #ffc107;
-  font-weight: bold;
-}
-
-/* Botón de aceptar */
-.start-button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  background-color: #ff007f;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.2s;
-}
-.start-button:hover {
-  background-color: #cc0066;
-}
-
-/* -------------- STYLES - ModelResult -------------- */
-/* Botón de compartir resultados */
-.share-button {
-  display: block;
-  width: 100%;
-  padding: 14px;
-  background-color: #00ffcc; /* Verde agua neón */
-  color: #000;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
-  transition: all 0.2s ease;
-}
-
-.share-button:hover {
-  background-color: #00ccaa;
-  box-shadow: 0 0 25px rgba(0, 255, 204, 0.7);
-  transform: scale(1.02);
-}
-
-
-
-/* -------------- STYLES - General -------------- */
-/* Título principal del juego */
-.game-title {
-  font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 42px;
-  letter-spacing: 2px;
-  color: #fff;
-  text-transform: uppercase;
+body {
   margin: 0;
-  text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
 }
 
-/* Botón flotante de ayuda (?) */
-.info-trigger-button:hover {
-  background-color: #ff007f !important;
-  color: white !important;
-  box-shadow: 0 0 10px #ff007f;
-}
-
-/* Botón para reabrir el modal de ganar */
-.view-results-button {
-  background-color: #1a1a1a;
-  color: #00ffcc;
-  border: 2px solid #00ffcc;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.view-results-button:hover {
-  background-color: #00ffcc;
-  color: #000;
-  box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
-}
-
-/* ==========================================================================
-   PAGES - Menu and Classic
-   ========================================================================== */
-/* Botones del Menú Principal */
-.menu-btn {
-  background-color: #121212;
-  color: white;
-  border: 2px solid #ff007f; 
-  padding: 15px 25px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
-  text-align: left;
-  padding-left: 30px; 
-}
-
-.menu-btn:hover {
-  background-color: #ff007f;
-  color: white;
-  transform: translateY(-2px); 
-  box-shadow: 0 0 20px rgba(255, 0, 127, 0.6);
-}
-
-.menu-btn:active {
-  transform: translateY(0);
-}
-
-/* Botón flotante superior "Volver al Menú" */
-.back-menu-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: #1a1a1a;
-  color: #aaa;
-  border: 1px solid #333;
-  padding: 8px 15px;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 13px;
-  z-index: 10;
-  transition: all 0.2s ease;
-}
-
-.back-menu-btn:hover {
-  border-color: #ff007f;
-  color: #ff007f;
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
-}
-
-
-/* ==========================================================================
-   PAGES - Skullette Mode
-   ========================================================================== */
-/* Contenedor e imagen del Skullete Secreto */
-.skullete-display-container {
-  background-color: #111;
-  border: 2px dashed #ff007f;
-  border-radius: 15px;
-  padding: 20px;
-  width: 160px;
-  height: 160px;
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 15px rgba(255, 0, 127, 0.1);
-}
-
-.skullete-image {
+#root {
+  width: 1126px;
   max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  /* Efecto de sombra sutil detrás del skullete */
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
-}
-
-/* Filas de intentos en el modo Skullete */
-.skullete-guess-row {
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
   display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  border: 2px solid #333;
-  animation: slideIn 0.3s ease;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.skullete-guess-row img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: #222;
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
 }
 
-/* Animación de entrada para los intentos */
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
 }
 
-/* Botón interruptor del filtro de color */
-.toggle-filter-btn {
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 1px solid #555;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 13px;
-  transition: all 0.2s ease;
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
 }
 
-.toggle-filter-btn:hover {
-  border-color: #ff007f;
-  box-shadow: 0 0 8px rgba(255, 0, 127, 0.3);
-}
-
-/* Estilo cuando el usuario decide ver el Skullete a color */
-.toggle-filter-btn.color-active {
-  background-color: #ff007f;
-  color: white;
-  border-color: #ff007f;
-  box-shadow: 0 0 12px rgba(255, 0, 127, 0.5);
-}
-
-.toggle-filter-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  box-shadow: none;
-  border-color: #333;
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
 }
