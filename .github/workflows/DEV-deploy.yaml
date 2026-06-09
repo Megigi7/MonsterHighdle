@@ -19,7 +19,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "megigi7.github.io/monsterhighdle"
+      url: '${{ steps.deployment.outputs.page_url }}'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
