@@ -4,8 +4,9 @@ import SearchBar from '../components/SearchBar';
 import Board from '../components/Board';
 import InfoModal from '../components/InfoModal';
 import ModalResult from '../components/ModalResult';
+import { getRandomElement } from '../utils/gameLogic';
 
-const App = () => {
+const ClassicMode = () => {
   // --- ESTADOS DEL JUEGO ---
   const [secretCharacter, setSecretCharacter] = useState(null);
   const [guesses, setGuesses] = useState([]);
@@ -15,11 +16,11 @@ const App = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(true); // Se abre automáticamente al entrar
   const [isResultOpen, setIsResultOpen] = useState(false);
 
-  // --- EFECTO INICIAL: Elegir el personaje secreto ---
+  // --- PASO INICIAL: Elegir el personaje secreto ---
   useEffect(() => {
     // Por ahora, elige uno al azar cada vez que se recarga la página
-    const randomIndex = Math.floor(Math.random() * charactersData.length);
-    setSecretCharacter(charactersData[randomIndex]);
+    const randomCharacter = getRandomElement(charactersData);
+    setSecretCharacter(randomCharacter);
   }, []);
 
   // --- LÓGICA CUANDO EL USUARIO SELECCIONA UN PERSONAJE ---
@@ -76,4 +77,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ClassicMode;

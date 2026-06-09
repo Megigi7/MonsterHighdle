@@ -8,7 +8,7 @@
     "nDolls": "50",
     "hairColor": "Negro / Rosa",
     "hasPet": "Sí",
-    "image": "",
+    "image": "../public/character-icons/draculaura.png",
     "skullette": ""
   },
   {
@@ -20,7 +20,7 @@
     "nDolls": "50",
     "hairColor": "Negro / Blanco",
     "hasPet": "Sí",
-    "image": "",
+    "image": "../public/character-icons/frankie-stein.png",
     "skullette": ""
   }
 ]

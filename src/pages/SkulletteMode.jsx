@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import charactersData from '../data/characters.json';
 import SearchBar from '../components/SearchBar';
 import ModalResult from '../components/ModalResult';
+import GuessesList from '../components/GuessesList';
+import { getRandomElement } from '../utils/gameLogic';
 
 const SkulletteMode = () => {
   const [secretCharacter, setSecretCharacter] = useState(null);
@@ -14,8 +16,8 @@ const SkulletteMode = () => {
 
   // Elegir el Skullette secreto al cargar la página
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * charactersData.length);
-    setSecretCharacter(charactersData[randomIndex]);
+    const randomCharacter = getRandomElement(charactersData);
+    setSecretCharacter(randomCharacter);
   }, []);
 
   const handleSelectCharacter = (character) => {
@@ -78,21 +80,8 @@ const SkulletteMode = () => {
       )}
 
       {/* Lista de intentos simplificada */}
-      <div className="skullette-guesses-list" style={{ marginTop: '30px' }}>
-        {guesses.slice(0).reverse().map((guess, index) => {
-          const isCorrect = guess.id === secretCharacter.id;
-          return (
-            <div 
-              key={index} 
-              className={`skullette-guess-row ${isCorrect ? 'correct' : 'incorrect'}`}
-            >
-              <img src={guess.image} alt="" />
-              <span>{guess.name}</span>
-            </div>
-          );
-        })}
-      </div>
-
+      <GuessesList guesses={guesses} secretCharacterId={secretCharacter.id} />
+      
       {/* Ventana de Victoria */}
       <ModalResult 
         isOpen={isResultOpen} 

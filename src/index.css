@@ -153,7 +153,7 @@
   flex-grow: 1;
 }
 
-/* Estilo para la barra de scroll (Opcional, a juego con el juego) */
+/* Estilo para la barra de scroll*/
 .modal-body::-webkit-scrollbar {
   width: 8px;
 }
@@ -229,7 +229,7 @@
   display: block;
   width: 100%;
   padding: 14px;
-  background-color: #00ffcc; /* Verde agua neón */
+  background-color: #00ffcc;
   color: #000;
   border: none;
   border-radius: 25px;
@@ -247,9 +247,75 @@
   transform: scale(1.02);
 }
 
+/* -------------- STYLES - GuessesList -------------- */
+
+/* Filas de intentos simples (otros modos excepto Classic) */
+.character-guess-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  border: 2px solid #333;
+  animation: slideIn 0.3s ease;
+}
+
+.character-guess-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #222;
+}
+
+/* Animación de entrada para los intentos */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
 
 
 /* -------------- STYLES - General -------------- */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  background-color: #050505;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.app-main-content {
+  flex: 1; /* Ocupa todo lo posible */
+  width: 100%;
+}
+
+.app-footer{
+  text-align: 'center';
+  margin-top: '40px'; 
+  font-size: '11px'; 
+  color: '#555'; 
+  padding: 10px 0;
+  padding: '10px' 
+}
+
+
 /* Título principal del juego */
 .game-title {
   font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -283,6 +349,8 @@
   color: #000;
   box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
 }
+
+
 
 /* ==========================================================================
    PAGES - Menu and Classic
@@ -364,35 +432,6 @@
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 }
 
-/* Filas de intentos en el modo Skullette */
-.skullette-guess-row {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  border: 2px solid #333;
-  animation: slideIn 0.3s ease;
-}
-
-.skullette-guess-row img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: #222;
-}
-
-/* Animación de entrada para los intentos */
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* Botón interruptor del filtro de color */
 .toggle-filter-btn {
   background-color: #1a1a1a;
@@ -424,4 +463,43 @@
   cursor: not-allowed;
   box-shadow: none;
   border-color: #333;
+}
+
+/* ==========================================================================
+   PAGES - Silhouette Mode
+   ========================================================================== */
+/* Contenedor de la silueta del personaje */
+.silhouette-display-container {
+  background-color: #111;
+  border: 2px dashed #ff007f;
+  border-radius: 15px;
+  padding: 10px;
+  width: 220px;
+  height: 220px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Vital: esconde el resto del cuerpo del personaje que sobresale por el zoom */
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.1);
+}
+
+/* Estado MIENTRAS juega: Imagen totalmente negra y con un zoom de x3.5 */
+.silhouette-image.zoomed-hidden {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform: scale(3.5); /* Ajusta este número si quieres más o menos zoom */
+  filter: brightness(0); /* Hack definitivo: vuelve la imagen completamente negra */
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto elástico al revelarse */
+}
+
+/* Estado CUANDO ADIVINA: Se quita el zoom y recupera su color original */
+.silhouette-image.revealed {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform: scale(1); /* Volvemos al tamaño normal */
+  filter: brightness(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3)); /* Recupera el color y añade brillo */
+  transition: all 0.6s ease-in-out;
 }

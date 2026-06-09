@@ -10,10 +10,10 @@ const App = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(true); // Control global del modal de info
 
   return (
-    <div className="app-container" style={{ minHeight: '100vh', backgroundColor: '#050505', color: 'white', padding: '20px', boxSizing: 'border-box' }}>
+    <div className="app-container" >
       
       {/* CABECERA GLOBAL: Visible en toda la app */}
-      <header style={{ textAlign: 'center', marginBottom: '40px', position: 'relative', maxWidth: '600px', margin: '0 auto 30px auto' }}>
+      <header className="app-header">
         
         {/* Botón Volver al Menú (Solo si no estamos ya en el menú) */}
         {currentMode !== 'menu' && (
@@ -39,7 +39,7 @@ const App = () => {
       </header>
 
       {/* CONTENIDO INTERNABLE (Cambia según el modo) */}
-      <main>
+      <main className="app-main-content">
         {currentMode === 'menu' && <ModeMenu onSelectMode={setCurrentMode} />}
         {currentMode === 'classic' && <ClassicMode />}
         {currentMode === 'skullette' && <SkulletteMode />}
@@ -50,7 +50,7 @@ const App = () => {
       <InfoModal isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} />
 
       {/* Pie de página con el Disclaimer Legal */}
-      <footer style={{ textAlign: 'center', marginTop: '50px', fontSize: '11px', color: '#555', padding: '10px' }}>
+      <footer className="app-footer">
         <p>Disclaimer: MonsterHighdle is a free fan-made game made by a fan for fans in which I get no profit from. It's not affiliated with or endorsed by Mattel, Inc. Monster High and all related trademarks are the property of Mattel.</p>
       </footer>
 

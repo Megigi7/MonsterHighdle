@@ -24,7 +24,7 @@ const SearchBar = ({ allCharacters, onSelectCharacter, alreadyGuessed }) => {
 
   // Se ejecuta cuando el usuario hace clic en una sugerencia
   const handleSelect = (character) => {
-    onSelectCharacter(character); // Enviamos el personaje al App.js
+    onSelectCharacter(character); // Enviamos el personaje
     setQuery('');                // Limpiamos el buscador
     setSuggestions([]);          // Limpiamos las sugerencias
   };
