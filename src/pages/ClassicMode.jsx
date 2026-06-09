@@ -39,11 +39,11 @@ const ClassicMode = () => {
   };
 
   // Esperamos a que el personaje secreto esté cargado para no dar errores
-  if (!secretCharacter) return <div style={{ color: 'white', textCenter: 'center' }}>Choosing a secret monster...</div>;
+  if (!secretCharacter) return <div style={{ color: 'white', textAlign: 'center' }}>Choosing a secret monster...</div>;
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px', textAlign: 'center' }}>
-      <h2 className="game-title" style={{ fontSize: '32px', marginBottom: '20px' }}>Classic</h2>
+    <div className="game-container">
+      <h2 className="game-title">Classic</h2>
 
       {/* Zona de Juego Activa */}
       {gameStatus === 'playing' ? (

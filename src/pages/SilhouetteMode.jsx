@@ -45,8 +45,8 @@ const SilhouetteMode = () => {
 
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px', textAlign: 'center' }}>
-      <h2 className="game-title" style={{ fontSize: '32px', marginBottom: '20px' }}>Silhouette Mode</h2>
+    <div className="game-container">
+      <h2 className="game-title">Silhouette</h2>
       <p style={{ color: '#aaa' }}>Guess the character by their silhouette</p>
 
       {/* Contenedor de la Silueta */}

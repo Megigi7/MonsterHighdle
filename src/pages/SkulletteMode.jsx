@@ -36,8 +36,8 @@ const SkulletteMode = () => {
   if (!secretCharacter) return <div style={{ color: 'white', textAlign: 'center' }}>Loading Skullette...</div>;
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px', textAlign: 'center' }}>
-      <h2 className="game-title" style={{ fontSize: '32px', marginBottom: '20px' }}>Skullette</h2>
+    <div className="game-container">
+      <h2 className="game-title">Skullette</h2>
       <p style={{ color: '#aaa' }}>Whos Skullette is this?</p>
 
       {/* Botón Interruptor para el Filtro de Color */}

@@ -46,7 +46,7 @@
 
 /* -------------- STYLES - Board -------------- */
 .board-container{
-  /* max-width: 1000px;  */
+  /* max-width: 1200px;  */
   margin: 0 auto; 
   padding: 10px
 }
@@ -197,7 +197,6 @@
   background: #ff3399;
 }
 
-
 /* Botón de cerrar (X) */
 .close-button {
   position: absolute;
@@ -277,7 +276,6 @@
 }
 
 /* -------------- STYLES - GuessesList -------------- */
-
 /* Filas de intentos simples (otros modos excepto Classic) */
 .character-guess-row {
   display: flex;
@@ -306,7 +304,6 @@
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 
 
 
@@ -342,6 +339,13 @@
   padding: 10px 0;
 }
 
+/* Contenedor principal del juego */
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
 /* Título principal del juego */
 .game-title {
@@ -350,7 +354,7 @@
   letter-spacing: 2px;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 20px;
   text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
 }
 
