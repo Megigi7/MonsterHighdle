@@ -3,6 +3,7 @@ import charactersData from '../data/characters.json';
 import SearchBar from '../components/SearchBar';
 import ModalResult from '../components/ModalResult';
 import GuessesList from '../components/GuessesList';
+import { getRandomElement } from '../utils/gameLogic';
 
 const SilhouetteMode = () => {
   const [secretCharacter, setSecretCharacter] = useState(null);
