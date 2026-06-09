@@ -1,3 +1,16 @@
+// Configuración de los atributos del juego
+export const GAME_FIELDS = [
+  { id: 'gender', label: 'Gender' },
+  { id: 'species', label: 'Species' },
+  { id: 'firstAppearance', label: 'First Appearance' },
+  { id: 'nDolls', label: 'Nº of Dolls' },
+  { id: 'hairColor', label: 'Hair color' },
+  { id: 'hasPet', label: 'Has pet' },
+  { id: 'affiliation', label: 'Affiliation' }
+];
+
+export const GAME_URL = 'https://megigi7.github.io/monsterhighdle';
+
 /**
  * Selecciona un elemento aleatorio de cualquier array que le pases.
  */

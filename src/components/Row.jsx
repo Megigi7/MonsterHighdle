@@ -1,5 +1,5 @@
 import React from 'react';
-import { compareAttributes } from '../utils/gameLogic';
+import { compareAttributes, GAME_FIELDS } from '../utils/gameLogic';
 
 const Row = ({ guessedCharacter, secretCharacter }) => {
   // Obtenemos los colores de cada celda comparando el intento con el secreto
@@ -14,40 +14,11 @@ const Row = ({ guessedCharacter, secretCharacter }) => {
         <span>{guessedCharacter.name}</span>
       </div>
 
-      {/* Celda: Gender */}
-      <div className={`cell ${feedback.gender}`}>
-        {guessedCharacter.gender}
-      </div>
-
-      {/* Celda: Species */}
-      <div className={`cell ${feedback.species}`}>
-        {guessedCharacter.species}
-      </div>
-
-      {/* Celda: First Appearance */}
-      <div className={`cell ${feedback.firstAppearance}`}>
-        {guessedCharacter.firstAppearance}
-      </div>
-
-      {/* Celda: Nº of dolls (G1) */}
-      <div className={`cell ${feedback.nDolls}`}>
-        {guessedCharacter.nDolls}
-      </div>
-
-      {/* Celda: Hair Color */}
-      <div className={`cell ${feedback.hairColor}`}>
-        {guessedCharacter.hairColor}
-      </div>
-
-      {/* Celda: Has pet */}
-      <div className={`cell ${feedback.hasPet}`}>
-        Mascota: {guessedCharacter.hasPet}
-      </div>
-
-      {/* Celda: Affiliation */}
-      <div className={`cell ${feedback.affiliation}`}>
-        {guessedCharacter.affiliation}
-      </div>
+      {/* Celdas de atributos */}
+      {GAME_FIELDS.map((field) => {
+        const value = guessedCharacter[field.id];
+        const cellStatus = feedback[field.id] || 'incorrect';
+      })}
 
     </div>
   );

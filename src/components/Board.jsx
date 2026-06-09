@@ -1,5 +1,6 @@
 import React from 'react';
 import Row from './Row';
+import { GAME_FIELDS } from '../utils/gameLogic';
 
 const Board = ({ guesses, secretCharacter }) => {
   return (
@@ -9,13 +10,12 @@ const Board = ({ guesses, secretCharacter }) => {
       {guesses.length > 0 && (
         <div className="board-headers" style={{ display: 'flex', gap: '10px', marginBottom: '5px', fontWeight: 'bold', color: '#aaa', fontSize: '12px', textAlign: 'center' }}>
           <div style={{ width: '90px' }}>Character</div>
-          <div style={{ width: '90px' }}>Gender</div>
-          <div style={{ width: '90px' }}>Species</div>
-          <div style={{ width: '90px' }}>First Appearance</div>
-          <div style={{ width: '90px' }}>Nº of Dolls</div>
-          <div style={{ width: '90px' }}>Hair color</div>
-          <div style={{ width: '90px' }}>Has pet</div>
-          <div style={{ width: '90px' }}>Affiliation</div>
+          {/* Títulos de las columnas */}
+          {GAME_FIELDS.map((field) => (
+            <div key={field.id} style={{ width: '90px' }}>
+              {field.label}
+            </div>
+          ))}
         </div>
       )}
 

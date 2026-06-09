@@ -1,5 +1,5 @@
 import React from 'react';
-import { compareAttributes } from '../utils/gameLogic';
+import { compareAttributes, GAME_FIELDS, GAME_URL } from '../utils/gameLogic';
 
 const ModalResult = ({ isOpen, isWon, secretCharacter, guesses, onClose }) => {
   if (!isOpen) return null;
@@ -13,19 +13,18 @@ const ModalResult = ({ isOpen, isWon, secretCharacter, guesses, onClose }) => {
       let rowEmojis = '';
 
       // Mapeamos cada atributo a un emoji de color
-      const attrs = ['gender', 'species', 'firstAppearance', 'nDolls', 'hairColor', 'hasPet', 'affiliation'];
-      attrs.forEach((attr) => {
-        if (feedback[attr] === 'correct') rowEmojis += '🟩';
-        else if (feedback[attr] === 'partial') rowEmojis += '🟨';
+      GAME_FIELDS.forEach((field) => {
+        if (feedback[field.id] === 'correct') rowEmojis += '🟩';
+        else if (feedback[field.id] === 'partial') rowEmojis += '🟨';
         else rowEmojis += '🟥';
       });
 
       emojiShareText += rowEmojis + '\n';
     });
 
-    const gameUrl = 'https://megigi7.github.io/monsterhighdle';
+    const gameUrl = GAME_URL;
 
-    emojiShareText += '\nPlay it yourself on MonsterHighdle! 🦇\n👉 ${gameUrl}';
+    emojiShareText += `\nPlay it yourself on MonsterHighdle! 🦇\n👉 ${gameUrl}`;
 
     // Copiar al portapapeles del usuario
     navigator.clipboard.writeText(emojiShareText);
