@@ -1,7 +1,7 @@
 /* -------------- STYLES - Row -------------- */
 .cell {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +21,12 @@
   font-size: 12px;
 }
 
+.character-row{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px
+}
+
 /* Estados de los atributos */
 .correct {
   background-color: #28a745; /* Verde éxito */
@@ -37,6 +43,29 @@
   background-color: #dc3545; /* Rojo fallo */
   border-color: #bd2130;
 }
+
+/* -------------- STYLES - Board -------------- */
+.board-container{
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 10px
+}
+
+.board-headers{
+  display: flex; 
+  gap: 10px; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
+  color: #aaa;
+  font-size: 12px;
+  text-align: center; 
+}
+
+.board-title{
+  width: 120px;
+}
+
+/* .board-rows{} */
 
 /* -------------- STYLES - SearchBar -------------- */
 .search-input {

@@ -6,7 +6,7 @@ const Row = ({ guessedCharacter, secretCharacter }) => {
   const feedback = compareAttributes(guessedCharacter, secretCharacter);
 
   return (
-    <div className="character-row" style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
+    <div className="character-row">
       
       {/* Celda de la Imagen y Nombre (Siempre se muestra) */}
       <div className="cell info-cell">
@@ -20,11 +20,7 @@ const Row = ({ guessedCharacter, secretCharacter }) => {
         const cellStatus = feedback[field.id] || 'incorrect';
 
         return (
-          <div 
-            key={field.id} 
-            className={`cell ${cellStatus}`} 
-            style={{ width: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
-          >
+          <div key={field.id} className={`cell ${cellStatus}`} >
             {value}
           </div>
         );

@@ -4,15 +4,15 @@ import { GAME_FIELDS } from '../utils/gameLogic';
 
 const Board = ({ guesses, secretCharacter }) => {
   return (
-    <div className="board-container" style={{ maxWidth: '600px', margin: '0 auto', padding: '10px' }}>
+    <div className="board-container">
       
       {/* Si el usuario ya ha hecho al menos un intento, mostramos los encabezados */}
       {guesses.length > 0 && (
-        <div className="board-headers" style={{ display: 'flex', gap: '10px', marginBottom: '5px', fontWeight: 'bold', color: '#aaa', fontSize: '12px', textAlign: 'center' }}>
-          <div style={{ width: '90px' }}>Character</div>
+        <div className="board-headers">
+          <div className="board-title">Character</div>
           {/* Títulos de las columnas */}
           {GAME_FIELDS.map((field) => (
-            <div key={field.id} style={{ width: '90px' }}>
+            <div key={field.id} className="board-title">
               {field.label}
             </div>
           ))}
