@@ -18,6 +18,18 @@ const Row = ({ guessedCharacter, secretCharacter }) => {
       {GAME_FIELDS.map((field) => {
         const value = guessedCharacter[field.id];
         const cellStatus = feedback[field.id] || 'incorrect';
+
+        return (
+          <div 
+            key={field.id} 
+            className={`cell ${cellStatus}`} 
+            style={{ width: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
+          >
+            {value}
+          </div>
+        );
+
+
       })}
 
     </div>
