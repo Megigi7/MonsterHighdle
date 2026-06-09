@@ -1,6 +1,6 @@
 /* -------------- STYLES - Row -------------- */
 .cell {
-  width: 90px;
+  width: 80px;
   height: 90px;
   display: flex;
   align-items: center;
@@ -47,13 +47,17 @@
 /* -------------- STYLES - Board -------------- */
 .board-container{
   /* max-width: 1200px;  */
+  align-items: center;
   margin: 0 auto; 
-  padding: 10px
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .board-headers{
   display: flex; 
-  gap: 10px; 
+  gap: 14px; 
   margin-bottom: 5px; 
   font-weight: bold; 
   color: #aaa;
@@ -62,7 +66,7 @@
 }
 
 .board-title{
-  width: 120px;
+  width: 80px;
 }
 
 /* .board-rows{} */
