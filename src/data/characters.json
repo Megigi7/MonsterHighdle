@@ -9,7 +9,8 @@
     "hairColor": "Negro / Rosa",
     "hasPet": "Sí",
     "image": "../public/character-icons/draculaura.png",
-    "skullette": ""
+    "skullette": "",
+    "silhouette": ""
   },
   {
     "id": "frankie-stein",
@@ -21,7 +22,8 @@
     "hairColor": "Negro / Blanco",
     "hasPet": "Sí",
     "image": "../public/character-icons/frankie-stein.png",
-    "skullette": ""
+    "skullette": "",
+    "silhouette": ""
   }
 ]
 
