@@ -2,6 +2,7 @@
 .cell {
   width: 80px;
   height: 90px;
+  position: relative;  /* relative para la flecha de fondo */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +43,38 @@
 .incorrect {
   background-color: #dc3545; /* Rojo fallo */
   border-color: #bd2130;
+}
+
+/* Casillas con error numérico (Rojo): higher o lower */
+.cell.higher, .cell.lower {
+  background-color: #8b0000; /* Un rojo oscuro de fondo base */
+  background-size: cover;
+  color: white;
+  border-color: #ff0033;
+}
+
+/* La flecha gigante de fondo */
+.cell-arrow-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px; /* Tamaño gigante para que ocupe casi toda la casilla */
+  color: rgba(0, 0, 0, 0.35); /* Negro con opacidad para hacer el efecto de silueta oscura */
+  z-index: 1; /* Se queda atrás */
+  pointer-events: none; /* Evita que interfiera con el ratón */
+}
+
+/* El texto del número que va por encima de la flecha */
+.cell-text-value {
+  position: relative;
+  z-index: 2; /* Obliga al texto a estar por encima de la flecha */
+  font-size: 18px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra para que resalte perfectamente */
 }
 
 /* -------------- STYLES - Board -------------- */

@@ -40,6 +40,21 @@ export const compareAttributes = (guessedChar, secretChar) => {
       return;
     }
 
+    // Lógica específica para el número de muñecas, queremos dar pistas de "más" o "menos"
+    if (key === 'nDolls') {
+      const guessedNum = parseInt(guessedChar[key], 10);
+      const secretNum = parseInt(secretChar[key], 10);
+
+      if (guessedNum === secretNum) {
+        result[key] = 'correct';
+      } else if (secretNum > guessedNum) {
+        result[key] = 'higher'; // El personaje secreto tiene MÁS muñecas
+      } else {
+        result[key] = 'lower';  // El personaje secreto tiene MENOS muñecas
+      }
+      return;
+    }
+
     // Compara propiedades directas (coincidencia exacta)
     if (guessedChar[key] === secretChar[key]) {
       result[key] = 'correct';

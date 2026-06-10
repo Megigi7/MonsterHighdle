@@ -19,9 +19,23 @@ const Row = ({ guessedCharacter, secretCharacter }) => {
         const value = guessedCharacter[field.id];
         const cellStatus = feedback[field.id] || 'incorrect';
 
+        // Obtenemos la flecha correspondiente para el número de muñecas, si es necesario
+        let arrow = null;
+        if (cellStatus === 'higher') arrow = '▲'; // Flecha hacia arriba
+        if (cellStatus === 'lower')  arrow = '▼'; // Flecha hacia abajo
+
         return (
-          <div key={field.id} className={`cell ${cellStatus}`} >
-            {value}
+          <div 
+            key={field.id} 
+            className={`cell ${cellStatus}`} 
+          >
+            {/* Si hay una flecha, la pintamos en un contenedor especial de fondo */}
+            {arrow && <div className="cell-arrow-bg">{arrow}</div>}
+            
+            {/* El texto real (el número o año) queda por encima */}
+            <span className="cell-text-value">
+              {value}
+            </span>
           </div>
         );
 
