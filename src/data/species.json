@@ -1,39 +1,84 @@
 {
-   "beast-people": [
+  "beast-people": [
     "Werewolf",
     "Werecat",
-    "Deer",
+    "Yeti",
     "Bigfoot",
+    "Minotaur",
     "Beast monster",
-    "Minotaur"
-   ],
-    "water-creatures": [
-     "Sea monster",
-     "River Monster",
-     "Loch Ness Monster",
-     "Kraken",
-     "Mermaid"
-    ],
-    "undead-spirits": [
-     "Vampire",
-     "Zombie",
-     "Ghost",
-     "Skeleton",
-     "Mummy",
-     "Banshee",
-     "Poltergeist",
-     "Faceless Ghost"
-    ],
-    "magical-constructs": [
-     "Gargoyle",
-     "Genie",
-     "Robot",
-     "Plant monster",
-     "Harpy",
-     "Cyclops",
-     "Voodoo doll",
-     "Gorgon",
-     "Witch",
-     "Warlock"
-    ]
+    "Deer",
+    "Rat Monster",
+    "Troll"
+  ],
+  "aquatic-creatures": [
+    "Sea monster",
+    "River Monster",
+    "Loch Ness Monster",
+    "Kraken",
+    "Mermaid",
+    "Honey Island Swamp Monster",
+    "Sirena"
+  ],
+  "vampires": [
+    "Vampire",
+    "Emotional vampire",
+    "White Vampire Bat"
+  ],  
+  "undead": [
+    "Frankenmonster",
+    "Zombie",
+    "Mummy",
+    "Skeleton"
+  ],
+  "ghosts": [
+    "Banshee",
+    "Ghost",
+    "Ghost Pirate",
+    "Poltergeist",
+    "Faceless Ghost",
+    "Grim Reaper",
+    "Headless Horseman",
+    "Boogeyman"
+  ],
+  "magical-hybrids": [
+    "Centaur",
+    "Deer Centaur",
+    "Yeti Centaur",
+    "Gargoyle Centaur",
+    "Dragon Centaur",
+    "Pegasus Centaur",
+    "Sea-Horse Centaur",
+    "Butterfly Centaur",
+    "Nightmare Pegasus",
+    "Vampire Pegasus",
+    "Phoenix Centaur",
+    "Harpy",
+    "Moth",
+    "Unicorn"
+  ],
+  "mythical-monsters": [
+    "Gargoyle",
+    "Gorgon",
+    "Dragon",
+    "Cyclops",
+    "Eros",
+    "Comet Alien",
+    "Jungle Monster"
+  ],
+  "magical-constructs": [
+    "Robot",
+    "Voodoo doll",
+    "Plant monster",
+    "Blob Monster",
+    "Spider",
+    "Genie",
+    "Fire Elemental",
+    "Hyde-condition",
+    "Invisible",
+    "Witch",
+    "Warlock"
+  ],
+  "human": [
+    "Human"
+  ]
 }
