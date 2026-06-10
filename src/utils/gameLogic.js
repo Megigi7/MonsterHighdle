@@ -40,6 +40,41 @@ export const compareAttributes = (guessedChar, secretChar) => {
       return;
     }
 
+    // Lógica específica para la especie, queremos dar pistas de "mismo grupo familiar" aunque no sea exactamente igual
+    if (key === 'species') {
+      if (guessedChar[key] === secretChar[key]) {
+        result[key] = 'correct';
+      } else {
+        // 1. Separamos por si acaso son híbridos complejos (ej: "Skeleton / Moth")
+        const guessedSpeciesList = guessedChar[key].split(' / ');
+        const secretSpeciesList = secretChar[key].split(' / ');
+
+        // Helper: Función interna para buscar a qué clave (grupo) pertenece una especie en el JSON
+        const findGroupForSpecies = (speciesName) => {
+          const trimmedSpecies = speciesName.trim();
+          // Buscamos cuál de las categorías incluye la especie
+          return Object.keys(speciesGroupsData).find(groupKey => 
+            speciesGroupsData[groupKey].includes(trimmedSpecies)
+          );
+        };
+
+        // 2. Mapeamos las especies a sus respectivos grupos usando la función de arriba
+        const guessedGroups = guessedSpeciesList.map(findGroupForSpecies).filter(Boolean);
+        const secretGroups = secretSpeciesList.map(findGroupForSpecies).filter(Boolean);
+
+        // 3. Si comparten al menos un grupo familiar, se marca como parcial (amarillo)
+        const hasGroupMatch = guessedGroups.some(group => secretGroups.includes(group));
+
+        if (hasGroupMatch) {
+          result[key] = 'partial';
+        } else {
+          result[key] = 'incorrect';
+        }
+      }
+      return; // Saltamos al siguiente atributo
+    }
+
+
     // Lógica específica para el número de muñecas, queremos dar pistas de "más" o "menos"
     if (key === 'nDolls') {
       const guessedNum = parseInt(guessedChar[key], 10);

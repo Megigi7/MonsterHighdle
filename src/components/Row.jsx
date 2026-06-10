@@ -32,7 +32,7 @@ const Row = ({ guessedCharacter, secretCharacter }) => {
             {/* Si hay una flecha, la pintamos en un contenedor especial de fondo */}
             {arrow && <div className="cell-arrow-bg">{arrow}</div>}
             
-            {/* El texto real (el número o año) queda por encima */}
+            {/* El texto queda por encima */}
             <span className="cell-text-value">
               {value}
             </span>

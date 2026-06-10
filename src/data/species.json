@@ -1,0 +1,39 @@
+{
+   "beast-people": [
+    "Werewolf",
+    "Werecat",
+    "Deer",
+    "Bigfoot",
+    "Beast monster",
+    "Minotaur"
+   ],
+    "water-creatures": [
+     "Sea monster",
+     "River Monster",
+     "Loch Ness Monster",
+     "Kraken",
+     "Mermaid"
+    ],
+    "undead-spirits": [
+     "Vampire",
+     "Zombie",
+     "Ghost",
+     "Skeleton",
+     "Mummy",
+     "Banshee",
+     "Poltergeist",
+     "Faceless Ghost"
+    ],
+    "magical-constructs": [
+     "Gargoyle",
+     "Genie",
+     "Robot",
+     "Plant monster",
+     "Harpy",
+     "Cyclops",
+     "Voodoo doll",
+     "Gorgon",
+     "Witch",
+     "Warlock"
+    ]
+}
