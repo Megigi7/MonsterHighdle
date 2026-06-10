@@ -4,9 +4,8 @@ export const GAME_FIELDS = [
   { id: 'species', label: 'Species' },
   { id: 'firstAppearance', label: 'First Appearance' },
   { id: 'nDolls', label: 'Nº of Dolls' },
-  { id: 'hairColor', label: 'Hair color' },
-  
   { id: 'hasPet', label: 'Has pet' },
+  { id: 'hairColor', label: 'Hair color' },
 ];
 
 export const GAME_URL = 'https://megigi7.github.io/monsterhighdle';
