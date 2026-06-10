@@ -1,3 +1,5 @@
+import speciesGroupsData from '../data/speciesGroups.json'; // ◄ Clave para solucionar el "ReferenceError"
+
 // Configuración de los atributos del juego
 export const GAME_FIELDS = [
   { id: 'gender', label: 'Gender' },

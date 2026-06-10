@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import charactersData from '../data/characters.json';
-import speciesGroupsData from '../data/speciesGroups.json';
 import SearchBar from '../components/SearchBar';
 import Board from '../components/Board';
 import InfoModal from '../components/InfoModal';
