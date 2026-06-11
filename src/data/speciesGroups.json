@@ -1,12 +1,11 @@
 {
-  "beast-people": [
+  "beasts": [
     "Werewolf",
     "Werecat",
     "Yeti",
     "Bigfoot",
     "Minotaur",
     "Beast monster",
-    "Deer",
     "Rat Monster",
     "Troll"
   ],
@@ -16,67 +15,60 @@
     "Loch Ness Monster",
     "Kraken",
     "Mermaid",
-    "Honey Island Swamp Monster",
-    "Sirena"
+    "Swamp Monster"
   ],
   "vampires": [
     "Vampire",
     "Emotional vampire",
     "White Vampire Bat"
-  ],  
+  ],
   "undead": [
-    "Frankenmonster",
     "Zombie",
     "Mummy",
-    "Skeleton"
+    "Skeleton",
+    "Headless Horseman"
   ],
   "ghosts": [
     "Banshee",
     "Ghost",
-    "Ghost Pirate",
     "Poltergeist",
     "Faceless Ghost",
-    "Grim Reaper",
-    "Headless Horseman",
-    "Boogeyman"
+    "Grim Reaper"
   ],
-  "magical-hybrids": [
+  "magical": [
     "Centaur",
-    "Deer Centaur",
-    "Yeti Centaur",
-    "Gargoyle Centaur",
-    "Dragon Centaur",
-    "Pegasus Centaur",
-    "Sea-Horse Centaur",
-    "Butterfly Centaur",
-    "Nightmare Pegasus",
-    "Vampire Pegasus",
-    "Phoenix Centaur",
     "Harpy",
-    "Moth",
-    "Unicorn"
+    "Unicorn",
+    "Invisible"
   ],
-  "mythical-monsters": [
+  "witches": [
+    "Witch",
+    "Warlock",
+    "Voodoo doll"
+  ],
+  "nature": [
+    "Plant monster",
+    "Jungle Monster",
+    "Spider",
+    "Moth",
+    "Fire Elemental",
+    "Deer"
+  ],
+  "experiments": [
+    "Frankenmonster",
+    "Robot",
+    "Blob Monster",
+    "Hyde-condition"
+  ],
+  "mythical": [
     "Gargoyle",
     "Gorgon",
     "Dragon",
     "Cyclops",
     "Eros",
-    "Comet Alien",
-    "Jungle Monster"
-  ],
-  "magical-constructs": [
-    "Robot",
-    "Voodoo doll",
-    "Plant monster",
-    "Blob Monster",
-    "Spider",
     "Genie",
-    "Fire Elemental",
-    "Hyde-condition",
-    "Invisible",
-    "Witch",
-    "Warlock"
+    "Comet Alien",
+    "Boogeyman"
   ],
   "human": [
     "Human"

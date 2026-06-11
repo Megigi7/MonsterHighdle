@@ -73,7 +73,7 @@
 .cell-text-value {
   position: relative;
   z-index: 2; /* Obliga al texto a estar por encima de la flecha */
-  font-size: 18px;
+  font-size: 15px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra para que resalte perfectamente */
 }
 
