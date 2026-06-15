@@ -645,7 +645,7 @@
     "hasPet": "No",
     "hairColor": "Black / Pink / Purple",
     "image": "images/character-images/spelldon_cauldronello.png",
-    "skullette": "images/character-skullettes/spelldon_cauldronello.png"
+    "skullette": "No"
   },
   {
     "id": "toralei-stripe",

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import ModeMenu from './pages/ModeMenu';
 import ClassicMode from './pages/ClassicMode';
 import SkulletteMode from './pages/SkulletteMode';
 import SilhouetteMode from './pages/SilhouetteMode';
 import InfoModal from './components/InfoModal';
+
+
 
 // Crearemos un minicomponente interno para la Cabecera.
 // Hacemos esto porque 'useLocation' necesita estar DENTRO de <BrowserRouter> para funcionar.
@@ -46,6 +48,14 @@ const NavigationHeader = ({ onOpenInfo }) => {
 
 const App = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(true); // Control global del modal de info
+  const location = useLocation(); // Leemos la ruta actual
+
+  // Al cargar la app, si la URL no es la raíz "/", cerramos el modal automáticamente.
+  useEffect(() => {
+    if (location.pathname !== '/') {
+      setIsInfoOpen(false);
+    }
+  }, []); // Se ejecuta una sola vez al cargar la página
 
   return (
     // 1. Envolvemos TODA la aplicación con BrowserRouter
@@ -68,7 +78,7 @@ const App = () => {
             <Route path="/silhouette" element={<SilhouetteMode />} />
 
             {/* RED DE SEGURIDAD: Si escriben cualquier otra cosa, los manda al menú principal */}
-            <Route path="*" element={<ModeMenu />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
 
