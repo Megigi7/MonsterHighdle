@@ -46,7 +46,7 @@ const NavigationHeader = ({ onOpenInfo }) => {
   );
 };
 
-const App = () => {
+const AppContent = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(true); // Control global del modal de info
   const location = useLocation(); // Leemos la ruta actual
 
@@ -58,9 +58,6 @@ const App = () => {
   }, []); // Se ejecuta una sola vez al cargar la página
 
   return (
-    // 1. Envolvemos TODA la aplicación con BrowserRouter
-    // Añadimos el basename para que en GitHub Pages reconozca la subcarpeta
-    <BrowserRouter basename="/MonsterHighdle">
       <div className="app-container">
         
         {/* CABECERA GLOBAL (Utiliza la navegación de React Router) */}
@@ -91,6 +88,13 @@ const App = () => {
         </footer>
 
       </div>
+  );
+};
+
+const App = () => {
+  return (
+    <BrowserRouter basename="/MonsterHighdle">
+      <AppContent />
     </BrowserRouter>
   );
 };
