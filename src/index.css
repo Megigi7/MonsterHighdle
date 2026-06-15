@@ -163,96 +163,102 @@
 
 /* -------------- STYLES - InfoPage -------------- */
 
-/* Contenedor exterior que centra la página con un margen superior elegante */
-.info-page-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  padding: 20px 0;
+/* Contenedor principal centrado y con un ancho óptimo para leer en PC y móvil */
+.info-page-container {
+  max-width: 750px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: white;
+  font-family: sans-serif; /* O la fuente que uses en tu app */
   box-sizing: border-box;
 }
 
-/* Caja del contenido (antiguo modal-content) */
-.info-container {
-  background-color: #121212;
-  color: white;
-  border-radius: 15px;
-  border: 2px solid #ff007f;
-  width: 90%;
-  max-width: 750px;
-  /* Mantiene la altura máxima controlada para usar tu scroll personalizado */
-  max-height: 75vh; 
-  display: flex;
-  flex-direction: column; 
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(255, 0, 127, 0.3);
-}
-
-.info-container h2 {
+/* Título principal de la página con tu rosa Monster High */
+.info-page-title {
   color: #ff007f;
-  margin-top: 0;
+  font-size: 36px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.info-container h3 {
-  color: #ff007f;
-  margin-top: 15px;
+/* Subtítulo introductorio */
+.info-page-subtitle {
+  color: #aaa;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
-.info-container hr {
+/* Separadores limpios */
+.info-page-divider {
   border: 0;
   border-top: 1px solid #333;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
-/* Cabecera de la sección */
-.info-header {
-  padding: 25px 25px 10px 25px;
-  background-color: #121212; 
-  border-radius: 15px 15px 0 0;
+/* Bloque de contenido general */
+.info-page-content {
+  line-height: 1.6;
+  font-size: 15px;
 }
 
-/* Cuerpo con scroll */
-.info-body {
-  padding: 0 25px 25px 25px; 
-  overflow-y: auto;
-  flex-grow: 1;
+.info-page-content h3 {
+  color: #ff007f;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
-/* Estilo para la barra de scroll de Monster High que ya tenías */
-.info-body::-webkit-scrollbar {
-  width: 8px;
-}
-.info-body::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-.info-body::-webkit-scrollbar-thumb {
-  background: #ff007f;
-  border-radius: 10px;
-}
-.info-body::-webkit-scrollbar-thumb:hover {
-  background: #ff3399;
+.info-page-content h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-/* Ejemplos de colores (Se mantienen intactos) */
+.info-page-content p {
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+/* Estilos de las listas */
+.info-page-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info-page-content li {
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+/* Enlaces dentro del texto */
+.info-page-content a {
+  color: #ff007f;
+  text-decoration: none;
+  font-weight: bold;
+}
+.info-page-content a:hover {
+  text-decoration: underline;
+}
+
+/* Ejemplos de colores (Se quedan igual porque ya los tenías perfectos) */
 .example-row {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .example-box {
   width: 80px;
-  padding: 5px;
+  padding: 6px;
   text-align: center;
   font-weight: bold;
   border-radius: 4px;
   font-size: 12px;
-}
-.text-partial {
-  color: #ffc107;
-  font-weight: bold;
 }
 
 /* -------------- STYLES - ModelResult -------------- */
