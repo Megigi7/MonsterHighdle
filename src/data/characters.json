@@ -9,7 +9,7 @@
     "hasPet": "Yes",
     "hairColor": "White / Pink / Purple / Blue",
     "image": "images/character-images/abbey_bominable.png",
-    "skullete": "images/character-skulletes/abbey_bominable.png"
+    "skullette": "images/character-skullettes/abbey_bominable.png"
   },
   {
     "id": "clawdeen-wolf",
@@ -21,7 +21,7 @@
     "hasPet": "Yes",
     "hairColor": "Brown",
     "image": "images/character-images/clawdeen_wolf.png",
-    "skullete": "images/character-skulletes/clawdeen_wolf.png"
+    "skullette": "images/character-skullettes/clawdeen_wolf.png"
   },
   {
     "id": "cleo-de-nile",
@@ -33,7 +33,7 @@
     "hasPet": "Yes",
     "hairColor": "Brown / Yellow",
     "image": "images/character-images/cleo_de_nile.png",
-    "skullete": "images/character-skulletes/cleo_de_nile.png"
+    "skullette": "images/character-skullettes/cleo_de_nile.png"
   },
   {
     "id": "deuce-gorgon",
@@ -45,7 +45,7 @@
     "hasPet": "Yes",
     "hairColor": "Green",
     "image": "images/character-images/deuce_gorgon.png",
-    "skullete": "images/character-skulletes/deuce_gorgon.png"
+    "skullette": "images/character-skullettes/deuce_gorgon.png"
   },
   {
     "id": "draculaura",
@@ -57,7 +57,7 @@
     "hasPet": "Yes",
     "hairColor": "Black / Pink",
     "image": "images/character-images/draculaura.png",
-    "skullete": "images/character-skulletes/draculaura.png"
+    "skullette": "images/character-skullettes/draculaura.png"
   },
   {
     "id": "frankie-stein",
@@ -69,7 +69,7 @@
     "hasPet": "Yes",
     "hairColor": "Black / White",
     "image": "images/character-images/frankie_stein.png",
-    "skullete": "images/character-skulletes/frankie_stein.png"
+    "skullette": "images/character-skullettes/frankie_stein.png"
   },
   {
     "id": "ghoulia-yelps",
@@ -81,7 +81,7 @@
     "hasPet": "Yes",
     "hairColor": "Blue",
     "image": "images/character-images/ghoulia_yelps.png",
-    "skullete": "images/character-skulletes/ghoulia_yelps.png"
+    "skullette": "images/character-skullettes/ghoulia_yelps.png"
   },
   {
     "id": "lagoona-blue",
@@ -93,7 +93,7 @@
     "hasPet": "Yes",
     "hairColor": "Blue / Yellow",
     "image": "images/character-images/lagoona_blue.png",
-    "skullete": "images/character-skulletes/lagoona_blue.png"
+    "skullette": "images/character-skullettes/lagoona_blue.png"
   },
   {
     "id": "amanita-nightshade",
@@ -105,7 +105,7 @@
     "hasPet": "Yes",
     "hairColor": "Purple",
     "image": "images/character-images/amanita_nightshade.png",
-    "skullete": "images/character-skulletes/amanita_nightshade.png"
+    "skullette": "images/character-skullettes/amanita_nightshade.png"
   },
   {
     "id": "andy-beast",
@@ -117,7 +117,7 @@
     "hasPet": "No",
     "hairColor": "Purple",
     "image": "images/character-images/andy_beast.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "astranova",
@@ -129,7 +129,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/astranova.png",
-    "skullete": "images/character-skulletes/astranova.png"
+    "skullette": "images/character-skullettes/astranova.png"
   },
   {
     "id": "avea-trotter",
@@ -141,7 +141,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/avea_trotter.png",
-    "skullete": "images/character-skulletes/avea_trotter.png"
+    "skullette": "images/character-skullettes/avea_trotter.png"
   },
   {
     "id": "batsy-claro",
@@ -153,7 +153,7 @@
     "hasPet": "No",
     "hairColor": "White / Green",
     "image": "images/character-images/batsy_claro.png",
-    "skullete": "images/character-skulletes/batsy_claro.png"
+    "skullette": "images/character-skullettes/batsy_claro.png"
   },
   {
     "id": "bonita-femur",
@@ -165,7 +165,7 @@
     "hasPet": "No",
     "hairColor": "Yellow / Black / Pink",
     "image": "images/character-images/bonita_femur.png",
-    "skullete": "images/character-skulletes/bonita_femur.png"
+    "skullette": "images/character-skullettes/bonita_femur.png"
   },
   {
     "id": "catrine-demew",
@@ -177,7 +177,7 @@
     "hasPet": "No",
     "hairColor": "Purple",
     "image": "images/character-images/catrine_demew.png",
-    "skullete": "images/character-skulletes/catrine_demew.png"
+    "skullette": "images/character-skullettes/catrine_demew.png"
   },
   {
     "id": "catty-noir",
@@ -189,7 +189,7 @@
     "hasPet": "No",
     "hairColor": "Pink",
     "image": "images/character-images/catty_noir.png",
-    "skullete": "images/character-skulletes/catty_noir.png"
+    "skullette": "images/character-skullettes/catty_noir.png"
   },
   {
     "id": "clawd-wolf",
@@ -201,7 +201,7 @@
     "hasPet": "Yes",
     "hairColor": "Brown",
     "image": "images/character-images/clawd_wolf.png",
-    "skullete": "images/character-skulletes/clawd_wolf.png"
+    "skullette": "images/character-skullettes/clawd_wolf.png"
   },
   {
     "id": "finnegan-wake",
@@ -213,7 +213,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/finnegan_wake.png",
-    "skullete": "images/character-skulletes/finnegan_wake.png"
+    "skullette": "images/character-skullettes/finnegan_wake.png"
   },
   {
     "id": "gigi-grant",
@@ -225,7 +225,7 @@
     "hasPet": "Yes",
     "hairColor": "Pink / Yellow",
     "image": "images/character-images/gigi_grant.png",
-    "skullete": "images/character-skulletes/gigi_grant.png"
+    "skullette": "images/character-skullettes/gigi_grant.png"
   },
   {
     "id": "gilda-goldstag",
@@ -237,7 +237,7 @@
     "hasPet": "Yes",
     "hairColor": "Pink",
     "image": "images/character-images/gilda_goldstag.png",
-    "skullete": "images/character-skulletes/gilda_goldstag.png"
+    "skullette": "images/character-skullettes/gilda_goldstag.png"
   },
   {
     "id": "gillington-webber",
@@ -249,7 +249,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/gillington_webber.png",
-    "skullete": "images/character-skulletes/gillington_webber.png"
+    "skullette": "images/character-skullettes/gillington_webber.png"
   },
   {
     "id": "gooliope-jellington",
@@ -261,7 +261,7 @@
     "hasPet": "No",
     "hairColor": "Yellow / Pink",
     "image": "images/character-images/gooliope_jellington.png",
-    "skullete": "images/character-skulletes/gooliope_jellington.png"
+    "skullette": "images/character-skullettes/gooliope_jellington.png"
   },
   {
     "id": "gory-fangtell",
@@ -273,7 +273,7 @@
     "hasPet": "No",
     "hairColor": "Black / Purple",
     "image": "images/character-images/gory_fangtell.png",
-    "skullete": "images/character-skulletes/gory_fangtell.png"
+    "skullette": "images/character-skullettes/gory_fangtell.png"
   },
   {
     "id": "heath-burns",
@@ -285,7 +285,7 @@
     "hasPet": "No",
     "hairColor": "Red",
     "image": "images/character-images/heath_burns.png",
-    "skullete": "images/character-skulletes/heath_burns.png"
+    "skullette": "images/character-skullettes/heath_burns.png"
   },
   {
     "id": "holt-hyde",
@@ -297,7 +297,7 @@
     "hasPet": "Yes",
     "hairColor": "Red",
     "image": "images/character-images/holt_hyde.png",
-    "skullete": "images/character-skulletes/holt_hyde.png"
+    "skullette": "images/character-skullettes/holt_hyde.png"
   },
   {
     "id": "hoodude-voodoo",
@@ -309,7 +309,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/hoodude_voodoo.png",
-    "skullete": "images/character-skulletes/hoodude_voodoo.png"
+    "skullette": "images/character-skullettes/hoodude_voodoo.png"
   },
   {
     "id": "howleen-wolf",
@@ -321,7 +321,7 @@
     "hasPet": "Yes",
     "hairColor": "Orange",
     "image": "images/character-images/howleen_wolf.png",
-    "skullete": "images/character-skulletes/howleen_wolf.png"
+    "skullette": "images/character-skullettes/howleen_wolf.png"
   },
   {
     "id": "invisi-billy",
@@ -333,7 +333,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/invisi_billy.png",
-    "skullete": "images/character-skulletes/invisi_billy.png"
+    "skullette": "images/character-skullettes/invisi_billy.png"
   },
   {
     "id": "iris-clops",
@@ -345,7 +345,7 @@
     "hasPet": "No",
     "hairColor": "Green",
     "image": "images/character-images/iris_clops.png",
-    "skullete": "images/character-skulletes/iris_clops.png"
+    "skullette": "images/character-skullettes/iris_clops.png"
   },
   {
     "id": "isi-dawndancer",
@@ -357,7 +357,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/isi_dawndancer.png",
-    "skullete": "images/character-skulletes/isi_dawndancer.png"
+    "skullette": "images/character-skullettes/isi_dawndancer.png"
   },
   {
     "id": "jackson-jekyll",
@@ -369,7 +369,7 @@
     "hasPet": "Yes",
     "hairColor": "Black / Yellow",
     "image": "images/character-images/jackson_jekyll.png",
-    "skullete": "images/character-skulletes/jackson_jekyll.png"
+    "skullette": "images/character-skullettes/jackson_jekyll.png"
   },
   {
     "id": "jane-boolittle",
@@ -381,7 +381,7 @@
     "hasPet": "Yes",
     "hairColor": "Black / Pink",
     "image": "images/character-images/jane_boolittle.png",
-    "skullete": "images/character-skulletes/jane_boolittle.png"
+    "skullette": "images/character-skullettes/jane_boolittle.png"
   },
   {
     "id": "jinafire-long",
@@ -393,7 +393,7 @@
     "hasPet": "No",
     "hairColor": "Green / Black",
     "image": "images/character-images/jinafire_long.png",
-    "skullete": "images/character-skulletes/jinafire_long.png"
+    "skullette": "images/character-skullettes/jinafire_long.png"
   },
   {
     "id": "johnny-spirit",
@@ -405,7 +405,7 @@
     "hasPet": "No",
     "hairColor": "Black / Blue",
     "image": "images/character-images/johnny_spirit.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "kala-merri",
@@ -417,7 +417,7 @@
     "hasPet": "No",
     "hairColor": "Blue / Orange",
     "image": "images/character-images/kala_merri.png",
-    "skullete": "images/character-skulletes/kala_merri.png"
+    "skullette": "images/character-skullettes/kala_merri.png"
   },
   {
     "id": "kieran-valentine",
@@ -429,7 +429,7 @@
     "hasPet": "No",
     "hairColor": "Black / Red",
     "image": "images/character-images/kieran_valentine.png",
-    "skullete": "images/character-skulletes/kieran_valentine.png"
+    "skullette": "images/character-skullettes/kieran_valentine.png"
   },
   {
     "id": "kjersti-trollsøn",
@@ -441,7 +441,7 @@
     "hasPet": "No",
     "hairColor": "Pink / Blue",
     "image": "images/character-images/kjersti_trollson.png",
-    "skullete": "images/character-skulletes/kjersti_trollson.png"
+    "skullette": "images/character-skullettes/kjersti_trollson.png"
   },
   {
     "id": "lorna-mcnessie",
@@ -453,7 +453,7 @@
     "hasPet": "No",
     "hairColor": "Orange",
     "image": "images/character-images/lorna_mcnessie.png",
-    "skullete": "images/character-skulletes/lorna_mcnessie.png"
+    "skullette": "images/character-skullettes/lorna_mcnessie.png"
   },
   {
     "id": "manny-taur",
@@ -465,7 +465,7 @@
     "hasPet": "No",
     "hairColor": "Yellow",
     "image": "images/character-images/manny_taur.png",
-    "skullete": "images/character-skulletes/manny_taur.png"
+    "skullette": "images/character-skullettes/manny_taur.png"
   },
   {
     "id": "marisol-coxi",
@@ -477,7 +477,7 @@
     "hasPet": "No",
     "hairColor": "Pink / Green",
     "image": "images/character-images/marisol_coxi.png",
-    "skullete": "images/character-skulletes/marisol_coxi.png"
+    "skullette": "images/character-skullettes/marisol_coxi.png"
   },
   {
     "id": "meowlody",
@@ -489,7 +489,7 @@
     "hasPet": "No",
     "hairColor": "White / Black",
     "image": "images/character-images/meowlody.png",
-    "skullete": "images/character-skulletes/meowlody.png"
+    "skullette": "images/character-skullettes/meowlody.png"
   },
   {
     "id": "neighthan-rot",
@@ -501,7 +501,7 @@
     "hasPet": "No",
     "hairColor": "Black / Yellow / Red / Blue",
     "image": "images/character-images/neighthan_rot.png",
-    "skullete": "images/character-skulletes/neighthan_rot.png"
+    "skullette": "images/character-skullettes/neighthan_rot.png"
   },
   {
     "id": "operetta",
@@ -513,7 +513,7 @@
     "hasPet": "Yes",
     "hairColor": "Red / Black",
     "image": "images/character-images/operetta.png",
-    "skullete": "images/character-skulletes/operetta.png"
+    "skullette": "images/character-skullettes/operetta.png"
   },
   {
     "id": "peri-and-pearl-serpentine",
@@ -525,7 +525,7 @@
     "hasPet": "No",
     "hairColor": "Blue / White",
     "image": "images/character-images/peri_and_pearl_serpentine.png",
-    "skullete": "images/character-skulletes/peri_and_pearl_serpentine.png"
+    "skullette": "images/character-skullettes/peri_and_pearl_serpentine.png"
   },
   {
     "id": "purrsephone",
@@ -537,7 +537,7 @@
     "hasPet": "No",
     "hairColor": "Black / White",
     "image": "images/character-images/purrsephone.png",
-    "skullete": "images/character-skulletes/purrsephone.png"
+    "skullette": "images/character-skullettes/purrsephone.png"
   },
   {
     "id": "quill-talyntino",
@@ -549,7 +549,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/quill_talyntino.png",
-    "skullete": "images/character-skulletes/quill_talyntino.png"
+    "skullette": "images/character-skullettes/quill_talyntino.png"
   },
   {
     "id": "robecca-steam",
@@ -561,7 +561,7 @@
     "hasPet": "Yes",
     "hairColor": "Black / Blue",
     "image": "images/character-images/robecca_steam.png",
-    "skullete": "images/character-skulletes/robecca_steam.png"
+    "skullette": "images/character-skullettes/robecca_steam.png"
   },
   {
     "id": "rochelle-goyle",
@@ -573,7 +573,7 @@
     "hasPet": "Yes",
     "hairColor": "Pink / Blue",
     "image": "images/character-images/rochelle_goyle.png",
-    "skullete": "images/character-skulletes/rochelle_goyle.png"
+    "skullette": "images/character-skullettes/rochelle_goyle.png"
   },
   {
     "id": "scarah-screams",
@@ -585,7 +585,7 @@
     "hasPet": "No",
     "hairColor": "Black",
     "image": "images/character-images/scarah_screams.png",
-    "skullete": "images/character-skulletes/scarah_screams.png"
+    "skullette": "images/character-skullettes/scarah_screams.png"
   },
   {
     "id": "sirena-von-boo",
@@ -597,7 +597,7 @@
     "hasPet": "No",
     "hairColor": "Blue / Purple",
     "image": "images/character-images/sirena_von_boo.png",
-    "skullete": "images/character-skulletes/sirena_von_boo.png"
+    "skullette": "images/character-skullettes/sirena_von_boo.png"
   },
   {
     "id": "skelita-calaveras",
@@ -609,7 +609,7 @@
     "hasPet": "No",
     "hairColor": "Black / Orange",
     "image": "images/character-images/skelita_calaveras.png",
-    "skullete": "images/character-skulletes/skelita_calaveras.png"
+    "skullette": "images/character-skullettes/skelita_calaveras.png"
   },
   {
     "id": "sloman-mortavitch",
@@ -621,7 +621,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/sloman_mortavitch.png",
-    "skullete": "images/character-skulletes/sloman_mortavitch.png"
+    "skullette": "images/character-skullettes/sloman_mortavitch.png"
   },
   {
     "id": "spectra-vondergeist",
@@ -633,7 +633,7 @@
     "hasPet": "Yes",
     "hairColor": "Purple",
     "image": "images/character-images/spectra_vondergeist.png",
-    "skullete": "images/character-skulletes/spectra_vondergeist.png"
+    "skullette": "images/character-skullettes/spectra_vondergeist.png"
   },
   {
     "id": "spelldon-cauldronello",
@@ -645,7 +645,7 @@
     "hasPet": "No",
     "hairColor": "Black / Pink / Purple",
     "image": "images/character-images/spelldon_cauldronello.png",
-    "skullete": "images/character-skulletes/spelldon_cauldronello.png"
+    "skullette": "images/character-skullettes/spelldon_cauldronello.png"
   },
   {
     "id": "toralei-stripe",
@@ -657,7 +657,7 @@
     "hasPet": "Yes",
     "hairColor": "Orange / Black",
     "image": "images/character-images/toralei_stripe.png",
-    "skullete": "images/character-skulletes/toralei_stripe.png"
+    "skullette": "images/character-skullettes/toralei_stripe.png"
   },
   {
     "id": "twyla-boogeyman",
@@ -669,7 +669,7 @@
     "hasPet": "Yes",
     "hairColor": "Blue / Purple",
     "image": "images/character-images/twyla_boogeyman.png",
-    "skullete": "images/character-skulletes/twyla_boogeyman.png"
+    "skullette": "images/character-skullettes/twyla_boogeyman.png"
   },
   {
     "id": "venus-mcflytrap",
@@ -681,7 +681,7 @@
     "hasPet": "Yes",
     "hairColor": "Pink / Green",
     "image": "images/character-images/venus_mcflytrap.png",
-    "skullete": "images/character-skulletes/venus_mcflytrap.png"
+    "skullette": "images/character-skullettes/venus_mcflytrap.png"
   },
   {
     "id": "wydowna-spider",
@@ -693,7 +693,7 @@
     "hasPet": "Yes",
     "hairColor": "Red",
     "image": "images/character-images/wydowna_spider.png",
-    "skullete": "images/character-skulletes/wydowna_spider.png"
+    "skullette": "images/character-skullettes/wydowna_spider.png"
   },
   {
     "id": "clair",
@@ -705,7 +705,7 @@
     "hasPet": "No",
     "hairColor": "Black / Blue",
     "image": "images/character-images/clair.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "djinni-grant",
@@ -717,7 +717,7 @@
     "hasPet": "No",
     "hairColor": "Blue / Purple",
     "image": "images/character-images/djinni_grant.png",
-    "skullete": "images/character-skulletes/djinni_grant.png"
+    "skullette": "images/character-skullettes/djinni_grant.png"
   },
   {
     "id": "elle-eedee",
@@ -729,7 +729,7 @@
     "hasPet": "No",
     "hairColor": "Blue / Black / Purple",
     "image": "images/character-images/elle_eedee.png",
-    "skullete": "images/character-skulletes/elle_eedee.png"
+    "skullette": "images/character-skullettes/elle_eedee.png"
   },
   {
     "id": "fawn",
@@ -741,7 +741,7 @@
     "hasPet": "No",
     "hairColor": "Brown",
     "image": "images/character-images/fawn.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "garrott-du-roque",
@@ -753,7 +753,7 @@
     "hasPet": "No",
     "hairColor": "Blue",
     "image": "images/character-images/garrott_du_roque.png",
-    "skullete": "images/character-skulletes/garrott_du_roque.png"
+    "skullette": "images/character-skullettes/garrott_du_roque.png"
   },
   {
     "id": "honey-swamp",
@@ -765,7 +765,7 @@
     "hasPet": "No",
     "hairColor": "Blue / Green",
     "image": "images/character-images/honey_swamp.png",
-    "skullete": "images/character-skulletes/honey_swamp.png"
+    "skullette": "images/character-skullettes/honey_swamp.png"
   },
   {
     "id": "kiyomi-haunterly",
@@ -777,7 +777,7 @@
     "hasPet": "No",
     "hairColor": "Purple / Pink",
     "image": "images/character-images/kiyomi_haunterly.png",
-    "skullete": "images/character-skulletes/kiyomi_haunterly.png"
+    "skullette": "images/character-skullettes/kiyomi_haunterly.png"
   },
   {
     "id": "luna-mothews",
@@ -789,7 +789,7 @@
     "hasPet": "No",
     "hairColor": "Black / Red",
     "image": "images/character-images/luna_mothews.png",
-    "skullete": "images/character-skulletes/luna_mothews.png"
+    "skullette": "images/character-skullettes/luna_mothews.png"
   },
   {
     "id": "mouscedes-king",
@@ -801,7 +801,7 @@
     "hasPet": "No",
     "hairColor": "Pink",
     "image": "images/character-images/mouscedes_king.png",
-    "skullete": "images/character-skulletes/mouscedes_king.png"
+    "skullette": "images/character-skullettes/mouscedes_king.png"
   },
   {
     "id": "porter-geiss",
@@ -813,7 +813,7 @@
     "hasPet": "Yes",
     "hairColor": "Green",
     "image": "images/character-images/porter_geiss.png",
-    "skullete": "images/character-skulletes/porter_geiss.png"
+    "skullette": "images/character-skullettes/porter_geiss.png"
   },
   {
     "id": "posea-reef",
@@ -825,7 +825,7 @@
     "hasPet": "No",
     "hairColor": "Purple / Green",
     "image": "images/character-images/posea_reef.png",
-    "skullete": "images/character-skulletes/posea_reef.png"
+    "skullette": "images/character-skullettes/posea_reef.png"
   },
   {
     "id": "river-styxx",
@@ -837,7 +837,7 @@
     "hasPet": "Yes",
     "hairColor": "Purple / Blue / Pink",
     "image": "images/character-images/river_styxx.png",
-    "skullete": "images/character-skulletes/river_styxx.png"
+    "skullette": "images/character-skullettes/river_styxx.png"
   },
   {
     "id": "seth-ptolemy",
@@ -849,7 +849,7 @@
     "hasPet": "No",
     "hairColor": "Brown",
     "image": "images/character-images/seth_ptolemy.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "vandala-doubloons",
@@ -861,7 +861,7 @@
     "hasPet": "Yes",
     "hairColor": "Blue / White",
     "image": "images/character-images/vandala_doubloons.png",
-    "skullete": "images/character-skulletes/vandala_doubloons.png"
+    "skullette": "images/character-skullettes/vandala_doubloons.png"
   },
   {
     "id": "ca-cupid",
@@ -873,7 +873,7 @@
     "hasPet": "No",
     "hairColor": "Pink",
     "image": "images/character-images/ca_cupid.png",
-    "skullete": "images/character-skulletes/ca_cupid.png"
+    "skullette": "images/character-skullettes/ca_cupid.png"
   },
   {
     "id": "casta-fierce",
@@ -885,7 +885,7 @@
     "hasPet": "No",
     "hairColor": "Black / Orange / Purple",
     "image": "images/character-images/casta_fierce.png",
-    "skullete": "images/character-skulletes/casta_fierce.png"
+    "skullette": "images/character-skullettes/casta_fierce.png"
   },
   {
     "id": "clawdia-wolf",
@@ -897,7 +897,7 @@
     "hasPet": "No",
     "hairColor": "Yellow",
     "image": "images/character-images/clawdia_wolf.png",
-    "skullete": "images/character-skulletes/clawdia_wolf.png"
+    "skullette": "images/character-skullettes/clawdia_wolf.png"
   },
   {
     "id": "elissabat",
@@ -909,7 +909,7 @@
     "hasPet": "No",
     "hairColor": "Purple",
     "image": "images/character-images/elissabat.png",
-    "skullete": "images/character-skulletes/elissabat.png"
+    "skullette": "images/character-skullettes/elissabat.png"
   },
   {
     "id": "nefera-de-nile",
@@ -921,7 +921,7 @@
     "hasPet": "Yes",
     "hairColor": "Blue / Black / Yellow",
     "image": "images/character-images/nefera_de_nile.png",
-    "skullete": "images/character-skulletes/nefera_de_nile.png"
+    "skullette": "images/character-skullettes/nefera_de_nile.png"
   },
   {
     "id": "victor-frankenstein",
@@ -933,7 +933,7 @@
     "hasPet": "No",
     "hairColor": "Black / White",
     "image": "images/character-images/victor_frankenstein.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "viperine-gorgon",
@@ -945,7 +945,7 @@
     "hasPet": "No",
     "hairColor": "Pink / White",
     "image": "images/character-images/viperine_gorgon.png",
-    "skullete": "images/character-skulletes/viperine_gorgon.png"
+    "skullette": "images/character-skullettes/viperine_gorgon.png"
   },
   {
     "id": "headless-headmistress-bloodgood",
@@ -957,7 +957,7 @@
     "hasPet": "Yes",
     "hairColor": "Black",
     "image": "images/character-images/headless_headmistress_bloodgood.png",
-    "skullete": "images/character-skulletes/headless_headmistress_bloodgood.png"
+    "skullette": "images/character-skullettes/headless_headmistress_bloodgood.png"
   },
   {
     "id": "clawvenus",
@@ -969,7 +969,7 @@
     "hasPet": "No",
     "hairColor": "Pink / Green",
     "image": "images/character-images/clawvenus.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "dracubecca",
@@ -981,7 +981,7 @@
     "hasPet": "No",
     "hairColor": "Black / Pink / Blue",
     "image": "images/character-images/dracubecca.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "lagoonafire",
@@ -993,7 +993,7 @@
     "hasPet": "No",
     "hairColor": "Green / Yellow",
     "image": "images/character-images/lagoonafire.png",
-    "skullete": "No"
+    "skullette": "No"
   },
   {
     "id": "cleolei",
@@ -1005,6 +1005,6 @@
     "hasPet": "No",
     "hairColor": "Brown / Orange / Yellow",
     "image": "images/character-images/cleolei.png",
-    "skullete": "No"
+    "skullette": "No"
   }
 ]
