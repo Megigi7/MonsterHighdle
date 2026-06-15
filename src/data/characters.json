@@ -960,15 +960,15 @@
     "skullete": "images/character-skulletes/headless_headmistress_bloodgood.png"
   },
   {
-    "id": "clawvennus",
-    "name": "Clawvennus",
+    "id": "clawvenus",
+    "name": "Clawvenus",
     "gender": "Female",
     "species": "Werewolf / Plant monster",
     "firstAppearance": "Freaky Fusion",
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Pink / Green",
-    "image": "images/character-images/clawvennus.png",
+    "image": "images/character-images/clawvenus.png",
     "skullete": "No"
   },
   {
