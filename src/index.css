@@ -345,12 +345,16 @@
 
 
 /* -------------- STYLES - General -------------- */
+body {
+  background-color: #000;
+}
+
 
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
-  background-color: #050505;
+  /* background-color: #050505; */
   color: white;
   padding: 20px;
   box-sizing: border-box;
