@@ -8,8 +8,8 @@
     "nDolls": 17,
     "hasPet": "Yes",
     "hairColor": "White / Pink / Purple / Blue",
-    "image": "../../public/images/character-images/abbey_bominable.png",
-    "skullete": "../../public/images/character-skulletes/abbey_bominable.png"
+    "image": "/images/character-images/abbey_bominable.png",
+    "skullete": "/images/character-skulletes/abbey_bominable.png"
   },
   {
     "id": "clawdeen-wolf",
@@ -20,8 +20,8 @@
     "nDolls": 41,
     "hasPet": "Yes",
     "hairColor": "Brown",
-    "image": "../../public/images/character-images/clawdeen_wolf.png",
-    "skullete": "../../public/images/character-skulletes/clawdeen_wolf.png"
+    "image": "/images/character-images/clawdeen_wolf.png",
+    "skullete": "/images/character-skulletes/clawdeen_wolf.png"
   },
   {
     "id": "cleo-de-nile",
@@ -32,8 +32,8 @@
     "nDolls": 26,
     "hasPet": "Yes",
     "hairColor": "Brown / Yellow",
-    "image": "../../public/images/character-images/cleo_de_nile.png",
-    "skullete": "../../public/images/character-skulletes/cleo_de_nile.png"
+    "image": "/images/character-images/cleo_de_nile.png",
+    "skullete": "/images/character-skulletes/cleo_de_nile.png"
   },
   {
     "id": "deuce-gorgon",
@@ -44,8 +44,8 @@
     "nDolls": 8,
     "hasPet": "Yes",
     "hairColor": "Green",
-    "image": "../../public/images/character-images/deuce_gorgon.png",
-    "skullete": "../../public/images/character-skulletes/deuce_gorgon.png"
+    "image": "/images/character-images/deuce_gorgon.png",
+    "skullete": "/images/character-skulletes/deuce_gorgon.png"
   },
   {
     "id": "draculaura",
@@ -56,8 +56,8 @@
     "nDolls": 44,
     "hasPet": "Yes",
     "hairColor": "Black / Pink",
-    "image": "../../public/images/character-images/draculaura.png",
-    "skullete": "../../public/images/character-skulletes/draculaura.png"
+    "image": "/images/character-images/draculaura.png",
+    "skullete": "/images/character-skulletes/draculaura.png"
   },
   {
     "id": "frankie-stein",
@@ -68,8 +68,8 @@
     "nDolls": 39,
     "hasPet": "Yes",
     "hairColor": "Black / White",
-    "image": "../../public/images/character-images/frankie_stein.png",
-    "skullete": "../../public/images/character-skulletes/frankie_stein.png"
+    "image": "/images/character-images/frankie_stein.png",
+    "skullete": "/images/character-skulletes/frankie_stein.png"
   },
   {
     "id": "ghoulia-yelps",
@@ -80,8 +80,8 @@
     "nDolls": 21,
     "hasPet": "Yes",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/ghoulia_yelps.png",
-    "skullete": "../../public/images/character-skulletes/ghoulia_yelps.png"
+    "image": "/images/character-images/ghoulia_yelps.png",
+    "skullete": "/images/character-skulletes/ghoulia_yelps.png"
   },
   {
     "id": "lagoona-blue",
@@ -92,8 +92,8 @@
     "nDolls": 23,
     "hasPet": "Yes",
     "hairColor": "Blue / Yellow",
-    "image": "../../public/images/character-images/lagoona_blue.png",
-    "skullete": "../../public/images/character-skulletes/lagoona_blue.png"
+    "image": "/images/character-images/lagoona_blue.png",
+    "skullete": "/images/character-skulletes/lagoona_blue.png"
   },
   {
     "id": "amanita-nightshade",
@@ -104,8 +104,8 @@
     "nDolls": 2,
     "hasPet": "Yes",
     "hairColor": "Purple",
-    "image": "../../public/images/character-images/amanita_nightshade.png",
-    "skullete": "../../public/images/character-skulletes/amanita_nightshade.png"
+    "image": "/images/character-images/amanita_nightshade.png",
+    "skullete": "/images/character-skulletes/amanita_nightshade.png"
   },
   {
     "id": "andy-beast",
@@ -116,7 +116,7 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Purple",
-    "image": "../../public/images/character-images/andy_beast.png",
+    "image": "/images/character-images/andy_beast.png",
     "skullete": "No"
   },
   {
@@ -128,8 +128,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/astranova.png",
-    "skullete": "../../public/images/character-skulletes/astranova.png"
+    "image": "/images/character-images/astranova.png",
+    "skullete": "/images/character-skulletes/astranova.png"
   },
   {
     "id": "avea-trotter",
@@ -140,8 +140,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/avea_trotter.png",
-    "skullete": "../../public/images/character-skulletes/avea_trotter.png"
+    "image": "/images/character-images/avea_trotter.png",
+    "skullete": "/images/character-skulletes/avea_trotter.png"
   },
   {
     "id": "batsy-claro",
@@ -152,8 +152,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "White / Green",
-    "image": "../../public/images/character-images/batsy_claro.png",
-    "skullete": "../../public/images/character-skulletes/batsy_claro.png"
+    "image": "/images/character-images/batsy_claro.png",
+    "skullete": "/images/character-skulletes/batsy_claro.png"
   },
   {
     "id": "bonita-femur",
@@ -164,8 +164,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Yellow / Black / Pink",
-    "image": "../../public/images/character-images/bonita_femur.png",
-    "skullete": "../../public/images/character-skulletes/bonita_femur.png"
+    "image": "/images/character-images/bonita_femur.png",
+    "skullete": "/images/character-skulletes/bonita_femur.png"
   },
   {
     "id": "catrine-demew",
@@ -176,8 +176,8 @@
     "nDolls": 7,
     "hasPet": "No",
     "hairColor": "Purple",
-    "image": "../../public/images/character-images/catrine_demew.png",
-    "skullete": "../../public/images/character-skulletes/catrine_demew.png"
+    "image": "/images/character-images/catrine_demew.png",
+    "skullete": "/images/character-skulletes/catrine_demew.png"
   },
   {
     "id": "catty-noir",
@@ -188,8 +188,8 @@
     "nDolls": 7,
     "hasPet": "No",
     "hairColor": "Pink",
-    "image": "../../public/images/character-images/catty_noir.png",
-    "skullete": "../../public/images/character-skulletes/catty_noir.png"
+    "image": "/images/character-images/catty_noir.png",
+    "skullete": "/images/character-skulletes/catty_noir.png"
   },
   {
     "id": "clawd-wolf",
@@ -200,8 +200,8 @@
     "nDolls": 7,
     "hasPet": "Yes",
     "hairColor": "Brown",
-    "image": "../../public/images/character-images/clawd_wolf.png",
-    "skullete": "../../public/images/character-skulletes/clawd_wolf.png"
+    "image": "/images/character-images/clawd_wolf.png",
+    "skullete": "/images/character-skulletes/clawd_wolf.png"
   },
   {
     "id": "finnegan-wake",
@@ -212,8 +212,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/finnegan_wake.png",
-    "skullete": "../../public/images/character-skulletes/finnegan_wake.png"
+    "image": "/images/character-images/finnegan_wake.png",
+    "skullete": "/images/character-skulletes/finnegan_wake.png"
   },
   {
     "id": "gigi-grant",
@@ -224,8 +224,8 @@
     "nDolls": 6,
     "hasPet": "Yes",
     "hairColor": "Pink / Yellow",
-    "image": "../../public/images/character-images/gigi_grant.png",
-    "skullete": "../../public/images/character-skulletes/gigi_grant.png"
+    "image": "/images/character-images/gigi_grant.png",
+    "skullete": "/images/character-skulletes/gigi_grant.png"
   },
   {
     "id": "gilda-goldstag",
@@ -236,8 +236,8 @@
     "nDolls": 1,
     "hasPet": "Yes",
     "hairColor": "Pink",
-    "image": "../../public/images/character-images/gilda_goldstag.png",
-    "skullete": "../../public/images/character-skulletes/gilda_goldstag.png"
+    "image": "/images/character-images/gilda_goldstag.png",
+    "skullete": "/images/character-skulletes/gilda_goldstag.png"
   },
   {
     "id": "gillington-webber",
@@ -248,8 +248,8 @@
     "nDolls": 5,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/gillington_webber.png",
-    "skullete": "../../public/images/character-skulletes/gillington_webber.png"
+    "image": "/images/character-images/gillington_webber.png",
+    "skullete": "/images/character-skulletes/gillington_webber.png"
   },
   {
     "id": "gooliope-jellington",
@@ -260,8 +260,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Yellow / Pink",
-    "image": "../../public/images/character-images/gooliope_jellington.png",
-    "skullete": "../../public/images/character-skulletes/gooliope_jellington.png"
+    "image": "/images/character-images/gooliope_jellington.png",
+    "skullete": "/images/character-skulletes/gooliope_jellington.png"
   },
   {
     "id": "gory-fangtell",
@@ -272,8 +272,8 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Black / Purple",
-    "image": "../../public/images/character-images/gory_fangtell.png",
-    "skullete": "../../public/images/character-skulletes/gory_fangtell.png"
+    "image": "/images/character-images/gory_fangtell.png",
+    "skullete": "/images/character-skulletes/gory_fangtell.png"
   },
   {
     "id": "heath-burns",
@@ -284,8 +284,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Red",
-    "image": "../../public/images/character-images/heath_burns.png",
-    "skullete": "../../public/images/character-skulletes/heath_burns.png"
+    "image": "/images/character-images/heath_burns.png",
+    "skullete": "/images/character-skulletes/heath_burns.png"
   },
   {
     "id": "holt-hyde",
@@ -296,8 +296,8 @@
     "nDolls": 2,
     "hasPet": "Yes",
     "hairColor": "Red",
-    "image": "../../public/images/character-images/holt_hyde.png",
-    "skullete": "../../public/images/character-skulletes/holt_hyde.png"
+    "image": "/images/character-images/holt_hyde.png",
+    "skullete": "/images/character-skulletes/holt_hyde.png"
   },
   {
     "id": "hoodude-voodoo",
@@ -308,8 +308,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/hoodude_voodoo.png",
-    "skullete": "../../public/images/character-skulletes/hoodude_voodoo.png"
+    "image": "/images/character-images/hoodude_voodoo.png",
+    "skullete": "/images/character-skulletes/hoodude_voodoo.png"
   },
   {
     "id": "howleen-wolf",
@@ -320,8 +320,8 @@
     "nDolls": 8,
     "hasPet": "Yes",
     "hairColor": "Orange",
-    "image": "../../public/images/character-images/howleen_wolf.png",
-    "skullete": "../../public/images/character-skulletes/howleen_wolf.png"
+    "image": "/images/character-images/howleen_wolf.png",
+    "skullete": "/images/character-skulletes/howleen_wolf.png"
   },
   {
     "id": "invisi-billy",
@@ -332,8 +332,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/invisi_billy.png",
-    "skullete": "../../public/images/character-skulletes/invisi_billy.png"
+    "image": "/images/character-images/invisi_billy.png",
+    "skullete": "/images/character-skulletes/invisi_billy.png"
   },
   {
     "id": "iris-clops",
@@ -344,8 +344,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Green",
-    "image": "../../public/images/character-images/iris_clops.png",
-    "skullete": "../../public/images/character-skulletes/iris_clops.png"
+    "image": "/images/character-images/iris_clops.png",
+    "skullete": "/images/character-skulletes/iris_clops.png"
   },
   {
     "id": "isi-dawndancer",
@@ -356,8 +356,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/isi_dawndancer.png",
-    "skullete": "../../public/images/character-skulletes/isi_dawndancer.png"
+    "image": "/images/character-images/isi_dawndancer.png",
+    "skullete": "/images/character-skulletes/isi_dawndancer.png"
   },
   {
     "id": "jackson-jekyll",
@@ -368,8 +368,8 @@
     "nDolls": 4,
     "hasPet": "Yes",
     "hairColor": "Black / Yellow",
-    "image": "../../public/images/character-images/jackson_jekyll.png",
-    "skullete": "../../public/images/character-skulletes/jackson_jekyll.png"
+    "image": "/images/character-images/jackson_jekyll.png",
+    "skullete": "/images/character-skulletes/jackson_jekyll.png"
   },
   {
     "id": "jane-boolittle",
@@ -380,8 +380,8 @@
     "nDolls": 3,
     "hasPet": "Yes",
     "hairColor": "Black / Pink",
-    "image": "../../public/images/character-images/jane_boolittle.png",
-    "skullete": "../../public/images/character-skulletes/jane_boolittle.png"
+    "image": "/images/character-images/jane_boolittle.png",
+    "skullete": "/images/character-skulletes/jane_boolittle.png"
   },
   {
     "id": "jinafire-long",
@@ -392,8 +392,8 @@
     "nDolls": 8,
     "hasPet": "No",
     "hairColor": "Green / Black",
-    "image": "../../public/images/character-images/jinafire_long.png",
-    "skullete": "../../public/images/character-skulletes/jinafire_long.png"
+    "image": "/images/character-images/jinafire_long.png",
+    "skullete": "/images/character-skulletes/jinafire_long.png"
   },
   {
     "id": "johnny-spirit",
@@ -404,7 +404,7 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Black / Blue",
-    "image": "../../public/images/character-images/johnny_spirit.png",
+    "image": "/images/character-images/johnny_spirit.png",
     "skullete": "No"
   },
   {
@@ -416,8 +416,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue / Orange",
-    "image": "../../public/images/character-images/kala_merri.png",
-    "skullete": "../../public/images/character-skulletes/kala_merri.png"
+    "image": "/images/character-images/kala_merri.png",
+    "skullete": "/images/character-skulletes/kala_merri.png"
   },
   {
     "id": "kieran-valentine",
@@ -428,8 +428,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Black / Red",
-    "image": "../../public/images/character-images/kieran_valentine.png",
-    "skullete": "../../public/images/character-skulletes/kieran_valentine.png"
+    "image": "/images/character-images/kieran_valentine.png",
+    "skullete": "/images/character-skulletes/kieran_valentine.png"
   },
   {
     "id": "kjersti-trollsøn",
@@ -440,8 +440,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Pink / Blue",
-    "image": "../../public/images/character-images/kjersti_trollsøn.png",
-    "skullete": "../../public/images/character-skulletes/kjersti_trollsøn.png"
+    "image": "/images/character-images/kjersti_trollsøn.png",
+    "skullete": "/images/character-skulletes/kjersti_trollsøn.png"
   },
   {
     "id": "lorna-mcnessie",
@@ -452,8 +452,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Orange",
-    "image": "../../public/images/character-images/lorna_mcnessie.png",
-    "skullete": "../../public/images/character-skulletes/lorna_mcnessie.png"
+    "image": "/images/character-images/lorna_mcnessie.png",
+    "skullete": "/images/character-skulletes/lorna_mcnessie.png"
   },
   {
     "id": "manny-taur",
@@ -464,8 +464,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Yellow",
-    "image": "../../public/images/character-images/manny_taur.png",
-    "skullete": "../../public/images/character-skulletes/manny_taur.png"
+    "image": "/images/character-images/manny_taur.png",
+    "skullete": "/images/character-skulletes/manny_taur.png"
   },
   {
     "id": "marisol-coxi",
@@ -476,8 +476,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Pink / Green",
-    "image": "../../public/images/character-images/marisol_coxi.png",
-    "skullete": "../../public/images/character-skulletes/marisol_coxi.png"
+    "image": "/images/character-images/marisol_coxi.png",
+    "skullete": "/images/character-skulletes/marisol_coxi.png"
   },
   {
     "id": "meowlody",
@@ -488,8 +488,8 @@
     "nDolls": 5,
     "hasPet": "No",
     "hairColor": "White / Black",
-    "image": "../../public/images/character-images/meowlody.png",
-    "skullete": "../../public/images/character-skulletes/meowlody.png"
+    "image": "/images/character-images/meowlody.png",
+    "skullete": "/images/character-skulletes/meowlody.png"
   },
   {
     "id": "neighthan-rot",
@@ -500,8 +500,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Black / Yellow / Red / Blue",
-    "image": "../../public/images/character-images/neighthan_rot.png",
-    "skullete": "../../public/images/character-skulletes/neighthan_rot.png"
+    "image": "/images/character-images/neighthan_rot.png",
+    "skullete": "/images/character-skulletes/neighthan_rot.png"
   },
   {
     "id": "operetta",
@@ -512,8 +512,8 @@
     "nDolls": 12,
     "hasPet": "Yes",
     "hairColor": "Red / Black",
-    "image": "../../public/images/character-images/operetta.png",
-    "skullete": "../../public/images/character-skulletes/operetta.png"
+    "image": "/images/character-images/operetta.png",
+    "skullete": "/images/character-skulletes/operetta.png"
   },
   {
     "id": "peri-and-pearl-serpentine",
@@ -524,8 +524,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue / White",
-    "image": "../../public/images/character-images/peri_and_pearl_serpentine.png",
-    "skullete": "../../public/images/character-skulletes/peri_and_pearl_serpentine.png"
+    "image": "/images/character-images/peri_and_pearl_serpentine.png",
+    "skullete": "/images/character-skulletes/peri_and_pearl_serpentine.png"
   },
   {
     "id": "purrsephone",
@@ -536,8 +536,8 @@
     "nDolls": 4,
     "hasPet": "No",
     "hairColor": "Black / White",
-    "image": "../../public/images/character-images/purrsephone.png",
-    "skullete": "../../public/images/character-skulletes/purrsephone.png"
+    "image": "/images/character-images/purrsephone.png",
+    "skullete": "/images/character-skulletes/purrsephone.png"
   },
   {
     "id": "quill-talyntino",
@@ -548,8 +548,8 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/quill_talyntino.png",
-    "skullete": "../../public/images/character-skulletes/quill_talyntino.png"
+    "image": "/images/character-images/quill_talyntino.png",
+    "skullete": "/images/character-skulletes/quill_talyntino.png"
   },
   {
     "id": "robecca-steam",
@@ -560,8 +560,8 @@
     "nDolls": 8,
     "hasPet": "Yes",
     "hairColor": "Black / Blue",
-    "image": "../../public/images/character-images/robecca_steam.png",
-    "skullete": "../../public/images/character-skulletes/robecca_steam.png"
+    "image": "/images/character-images/robecca_steam.png",
+    "skullete": "/images/character-skulletes/robecca_steam.png"
   },
   {
     "id": "rochelle-goyle",
@@ -572,8 +572,8 @@
     "nDolls": 11,
     "hasPet": "Yes",
     "hairColor": "Pink / Blue",
-    "image": "../../public/images/character-images/rochelle_goyle.png",
-    "skullete": "../../public/images/character-skulletes/rochelle_goyle.png"
+    "image": "/images/character-images/rochelle_goyle.png",
+    "skullete": "/images/character-skulletes/rochelle_goyle.png"
   },
   {
     "id": "scarah-screams",
@@ -584,8 +584,8 @@
     "nDolls": 6,
     "hasPet": "No",
     "hairColor": "Black",
-    "image": "../../public/images/character-images/scarah_screams.png",
-    "skullete": "../../public/images/character-skulletes/scarah_screams.png"
+    "image": "/images/character-images/scarah_screams.png",
+    "skullete": "/images/character-skulletes/scarah_screams.png"
   },
   {
     "id": "sirena-von-boo",
@@ -596,8 +596,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue / Purple",
-    "image": "../../public/images/character-images/sirena_von_boo.png",
-    "skullete": "../../public/images/character-skulletes/sirena_von_boo.png"
+    "image": "/images/character-images/sirena_von_boo.png",
+    "skullete": "/images/character-skulletes/sirena_von_boo.png"
   },
   {
     "id": "skelita-calaveras",
@@ -608,8 +608,8 @@
     "nDolls": 8,
     "hasPet": "No",
     "hairColor": "Black / Orange",
-    "image": "../../public/images/character-images/skelita_calaveras.png",
-    "skullete": "../../public/images/character-skulletes/skelita_calaveras.png"
+    "image": "/images/character-images/skelita_calaveras.png",
+    "skullete": "/images/character-skulletes/skelita_calaveras.png"
   },
   {
     "id": "sloman-mortavitch",
@@ -620,8 +620,8 @@
     "nDolls": 3,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/sloman_mortavitch.png",
-    "skullete": "../../public/images/character-skulletes/sloman_mortavitch.png"
+    "image": "/images/character-images/sloman_mortavitch.png",
+    "skullete": "/images/character-skulletes/sloman_mortavitch.png"
   },
   {
     "id": "spectra-vondergeist",
@@ -632,8 +632,8 @@
     "nDolls": 15,
     "hasPet": "Yes",
     "hairColor": "Purple",
-    "image": "../../public/images/character-images/spectra_vondergeist.png",
-    "skullete": "../../public/images/character-skulletes/spectra_vondergeist.png"
+    "image": "/images/character-images/spectra_vondergeist.png",
+    "skullete": "/images/character-skulletes/spectra_vondergeist.png"
   },
   {
     "id": "spelldon-cauldronello",
@@ -644,8 +644,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Black / Pink / Purple",
-    "image": "../../public/images/character-images/spelldon_cauldronello.png",
-    "skullete": "../../public/images/character-skulletes/spelldon_cauldronello.png"
+    "image": "/images/character-images/spelldon_cauldronello.png",
+    "skullete": "/images/character-skulletes/spelldon_cauldronello.png"
   },
   {
     "id": "toralei-stripe",
@@ -656,8 +656,8 @@
     "nDolls": 10,
     "hasPet": "Yes",
     "hairColor": "Orange / Black",
-    "image": "../../public/images/character-images/toralei_stripe.png",
-    "skullete": "../../public/images/character-skulletes/toralei_stripe.png"
+    "image": "/images/character-images/toralei_stripe.png",
+    "skullete": "/images/character-skulletes/toralei_stripe.png"
   },
   {
     "id": "twyla-boogeyman",
@@ -668,8 +668,8 @@
     "nDolls": 6,
     "hasPet": "Yes",
     "hairColor": "Blue / Purple",
-    "image": "../../public/images/character-images/twyla_boogeyman.png",
-    "skullete": "../../public/images/character-skulletes/twyla_boogeyman.png"
+    "image": "/images/character-images/twyla_boogeyman.png",
+    "skullete": "/images/character-skulletes/twyla_boogeyman.png"
   },
   {
     "id": "venus-mcflytrap",
@@ -680,8 +680,8 @@
     "nDolls": 12,
     "hasPet": "Yes",
     "hairColor": "Pink / Green",
-    "image": "../../public/images/character-images/venus_mcflytrap.png",
-    "skullete": "../../public/images/character-skulletes/venus_mcflytrap.png"
+    "image": "/images/character-images/venus_mcflytrap.png",
+    "skullete": "/images/character-skulletes/venus_mcflytrap.png"
   },
   {
     "id": "wydowna-spider",
@@ -692,8 +692,8 @@
     "nDolls": 2,
     "hasPet": "Yes",
     "hairColor": "Red",
-    "image": "../../public/images/character-images/wydowna_spider.png",
-    "skullete": "../../public/images/character-skulletes/wydowna_spider.png"
+    "image": "/images/character-images/wydowna_spider.png",
+    "skullete": "/images/character-skulletes/wydowna_spider.png"
   },
   {
     "id": "clair",
@@ -704,7 +704,7 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Black / Blue",
-    "image": "../../public/images/character-images/clair.png",
+    "image": "/images/character-images/clair.png",
     "skullete": "No"
   },
   {
@@ -716,8 +716,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Blue / Purple",
-    "image": "../../public/images/character-images/djinni_grant.png",
-    "skullete": "../../public/images/character-skulletes/djinni_grant.png"
+    "image": "/images/character-images/djinni_grant.png",
+    "skullete": "/images/character-skulletes/djinni_grant.png"
   },
   {
     "id": "elle-eedee",
@@ -728,8 +728,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Blue / Black / Purple",
-    "image": "../../public/images/character-images/elle_eedee.png",
-    "skullete": "../../public/images/character-skulletes/elle_eedee.png"
+    "image": "/images/character-images/elle_eedee.png",
+    "skullete": "/images/character-skulletes/elle_eedee.png"
   },
   {
     "id": "fawn",
@@ -740,7 +740,7 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Brown",
-    "image": "../../public/images/character-images/fawn.png",
+    "image": "/images/character-images/fawn.png",
     "skullete": "No"
   },
   {
@@ -752,8 +752,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Blue",
-    "image": "../../public/images/character-images/garrott_du_roque.png",
-    "skullete": "../../public/images/character-skulletes/garrott_du_roque.png"
+    "image": "/images/character-images/garrott_du_roque.png",
+    "skullete": "/images/character-skulletes/garrott_du_roque.png"
   },
   {
     "id": "honey-swamp",
@@ -764,8 +764,8 @@
     "nDolls": 3,
     "hasPet": "No",
     "hairColor": "Blue / Green",
-    "image": "../../public/images/character-images/honey_swamp.png",
-    "skullete": "../../public/images/character-skulletes/honey_swamp.png"
+    "image": "/images/character-images/honey_swamp.png",
+    "skullete": "/images/character-skulletes/honey_swamp.png"
   },
   {
     "id": "kiyomi-haunterly",
@@ -776,8 +776,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Purple / Pink",
-    "image": "../../public/images/character-images/kiyomi_haunterly.png",
-    "skullete": "../../public/images/character-skulletes/kiyomi_haunterly.png"
+    "image": "/images/character-images/kiyomi_haunterly.png",
+    "skullete": "/images/character-skulletes/kiyomi_haunterly.png"
   },
   {
     "id": "luna-mothews",
@@ -788,8 +788,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Black / Red",
-    "image": "../../public/images/character-images/luna_mothews.png",
-    "skullete": "../../public/images/character-skulletes/luna_mothews.png"
+    "image": "/images/character-images/luna_mothews.png",
+    "skullete": "/images/character-skulletes/luna_mothews.png"
   },
   {
     "id": "mouscedes-king",
@@ -800,8 +800,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Pink",
-    "image": "../../public/images/character-images/mouscedes_king.png",
-    "skullete": "../../public/images/character-skulletes/mouscedes_king.png"
+    "image": "/images/character-images/mouscedes_king.png",
+    "skullete": "/images/character-skulletes/mouscedes_king.png"
   },
   {
     "id": "porter-geiss",
@@ -812,8 +812,8 @@
     "nDolls": 1,
     "hasPet": "Yes",
     "hairColor": "Green",
-    "image": "../../public/images/character-images/porter_geiss.png",
-    "skullete": "../../public/images/character-skulletes/porter_geiss.png"
+    "image": "/images/character-images/porter_geiss.png",
+    "skullete": "/images/character-skulletes/porter_geiss.png"
   },
   {
     "id": "posea-reef",
@@ -824,8 +824,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Purple / Green",
-    "image": "../../public/images/character-images/posea_reef.png",
-    "skullete": "../../public/images/character-skulletes/posea_reef.png"
+    "image": "/images/character-images/posea_reef.png",
+    "skullete": "/images/character-skulletes/posea_reef.png"
   },
   {
     "id": "river-styxx",
@@ -836,8 +836,8 @@
     "nDolls": 2,
     "hasPet": "Yes",
     "hairColor": "Purple / Blue / Pink",
-    "image": "../../public/images/character-images/river_styxx.png",
-    "skullete": "../../public/images/character-skulletes/river_styxx.png"
+    "image": "/images/character-images/river_styxx.png",
+    "skullete": "/images/character-skulletes/river_styxx.png"
   },
   {
     "id": "seth-ptolemy",
@@ -848,7 +848,7 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Brown",
-    "image": "../../public/images/character-images/seth_ptolemy.png",
+    "image": "/images/character-images/seth_ptolemy.png",
     "skullete": "No"
   },
   {
@@ -860,8 +860,8 @@
     "nDolls": 1,
     "hasPet": "Yes",
     "hairColor": "Blue / White",
-    "image": "../../public/images/character-images/vandala_doubloons.png",
-    "skullete": "../../public/images/character-skulletes/vandala_doubloons.png"
+    "image": "/images/character-images/vandala_doubloons.png",
+    "skullete": "/images/character-skulletes/vandala_doubloons.png"
   },
   {
     "id": "ca-cupid",
@@ -872,8 +872,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Pink",
-    "image": "../../public/images/character-images/ca_cupid.png",
-    "skullete": "../../public/images/character-skulletes/ca_cupid.png"
+    "image": "/images/character-images/ca_cupid.png",
+    "skullete": "/images/character-skulletes/ca_cupid.png"
   },
   {
     "id": "casta-fierce",
@@ -884,8 +884,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Black / Orange / Purple",
-    "image": "../../public/images/character-images/casta_fierce.png",
-    "skullete": "../../public/images/character-skulletes/casta_fierce.png"
+    "image": "/images/character-images/casta_fierce.png",
+    "skullete": "/images/character-skulletes/casta_fierce.png"
   },
   {
     "id": "clawdia-wolf",
@@ -896,8 +896,8 @@
     "nDolls": 2,
     "hasPet": "No",
     "hairColor": "Yellow",
-    "image": "../../public/images/character-images/clawdia_wolf.png",
-    "skullete": "../../public/images/character-skulletes/clawdia_wolf.png"
+    "image": "/images/character-images/clawdia_wolf.png",
+    "skullete": "/images/character-skulletes/clawdia_wolf.png"
   },
   {
     "id": "elissabat",
@@ -908,8 +908,8 @@
     "nDolls": 4,
     "hasPet": "No",
     "hairColor": "Purple",
-    "image": "../../public/images/character-images/elissabat.png",
-    "skullete": "../../public/images/character-skulletes/elissabat.png"
+    "image": "/images/character-images/elissabat.png",
+    "skullete": "/images/character-skulletes/elissabat.png"
   },
   {
     "id": "nefera-de-nile",
@@ -920,8 +920,8 @@
     "nDolls": 4,
     "hasPet": "Yes",
     "hairColor": "Blue / Black / Yellow",
-    "image": "../../public/images/character-images/nefera_de_nile.png",
-    "skullete": "../../public/images/character-skulletes/nefera_de_nile.png"
+    "image": "/images/character-images/nefera_de_nile.png",
+    "skullete": "/images/character-skulletes/nefera_de_nile.png"
   },
   {
     "id": "victor-frankenstein",
@@ -932,7 +932,7 @@
     "nDolls": 0,
     "hasPet": "No",
     "hairColor": "Black / White",
-    "image": "../../public/images/character-images/victor_frankenstein.png",
+    "image": "/images/character-images/victor_frankenstein.png",
     "skullete": "No"
   },
   {
@@ -944,8 +944,8 @@
     "nDolls": 3,
     "hasPet": "No",
     "hairColor": "Pink / White",
-    "image": "../../public/images/character-images/viperine_gorgon.png",
-    "skullete": "../../public/images/character-skulletes/viperine_gorgon.png"
+    "image": "/images/character-images/viperine_gorgon.png",
+    "skullete": "/images/character-skulletes/viperine_gorgon.png"
   },
   {
     "id": "headless-headmistress-bloodgood",
@@ -956,8 +956,8 @@
     "nDolls": 1,
     "hasPet": "Yes",
     "hairColor": "Black",
-    "image": "../../public/images/character-images/headless_headmistress_bloodgood.png",
-    "skullete": "../../public/images/character-skulletes/headless_headmistress_bloodgood.png"
+    "image": "/images/character-images/headless_headmistress_bloodgood.png",
+    "skullete": "/images/character-skulletes/headless_headmistress_bloodgood.png"
   },
   {
     "id": "clawvennus",
@@ -968,7 +968,7 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Pink / Green",
-    "image": "../../public/images/character-images/clawvennus.png",
+    "image": "/images/character-images/clawvennus.png",
     "skullete": "No"
   },
   {
@@ -980,7 +980,7 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Black / Pink / Blue",
-    "image": "../../public/images/character-images/dracubecca.png",
+    "image": "/images/character-images/dracubecca.png",
     "skullete": "No"
   },
   {
@@ -992,7 +992,7 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Green / Yellow",
-    "image": "../../public/images/character-images/lagoonafire.png",
+    "image": "/images/character-images/lagoonafire.png",
     "skullete": "No"
   },
   {
@@ -1004,7 +1004,7 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Brown / Orange / Yellow",
-    "image": "../../public/images/character-images/cleolei.png",
+    "image": "/images/character-images/cleolei.png",
     "skullete": "No"
   }
 ]
