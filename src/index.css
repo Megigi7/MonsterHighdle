@@ -161,96 +161,143 @@
   border-radius: 10px;
 }
 
-/* -------------- STYLES - InfoPage -------------- */
+/* -------------- STYLES - InfoPage (Tabbed Layout) -------------- */
 
-/* Contenedor principal centrado y con un ancho óptimo para leer en PC y móvil */
-.info-page-container {
-  max-width: 750px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 40px 0;
+/* Contenedor principal que divide la pantalla en dos columnas */
+.info-page-layout {
+  display: flex;
+  max-width: 1000px;
+  width: 95%;
+  margin: 30px auto;
+  gap: 40px;
   color: white;
-  font-family: sans-serif; /* O la fuente que uses en tu app */
+  font-family: sans-serif;
   box-sizing: border-box;
 }
 
-/* Título principal de la página con tu rosa Monster High */
-.info-page-title {
-  color: #ff007f;
-  font-size: 36px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
+/* 🧭 MENÚ LATERAL */
+.info-sidebar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0; /* Evita que el menú se encoja en pantallas medianas */
 }
 
-/* Subtítulo introductorio */
-.info-page-subtitle {
+/* Botones del menú lateral */
+.sidebar-btn {
+  background: #121212;
   color: #aaa;
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
-
-/* Separadores limpios */
-.info-page-divider {
-  border: 0;
-  border-top: 1px solid #333;
-  margin: 30px 0;
-}
-
-/* Bloque de contenido general */
-.info-page-content {
-  line-height: 1.6;
+  border: 1px solid #333;
+  padding: 14px 18px;
+  border-radius: 8px;
+  text-align: left;
   font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.info-page-content h3 {
+.sidebar-btn:hover {
+  color: white;
+  border-color: #ff007f;
+  background-color: #1a0812;
+}
+
+/* 🌸 PESTAÑA ACTIVA (Estilo Neón Seleccionado) */
+.sidebar-btn.active {
+  color: white;
+  background-color: #121212;
+  border: 2px solid #ff007f;
+  box-shadow: 0 0 12px rgba(255, 0, 127, 0.4);
+}
+
+/* 📝 PANEL DE CONTENIDO (Derecha) */
+.info-content-panel {
+  flex-grow: 1;
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  min-height: 400px;
+}
+
+/* Títulos internos de las secciones */
+.info-section-title {
   color: #ff007f;
-  font-size: 22px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.info-page-content h4 {
-  color: #fff;
-  font-size: 18px;
+.info-section-block h3 {
+  color: #ff007f;
+  font-size: 20px;
   margin-top: 25px;
   margin-bottom: 10px;
 }
 
-.info-page-content p {
-  color: #e0e0e0;
+.info-section-block h4 {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.info-section-block p {
+  color: #ccc;
+  line-height: 1.6;
   margin-bottom: 15px;
+  font-size: 15px;
 }
 
-/* Estilos de las listas */
-.info-page-content ul {
+/* Listas */
+.info-rules-list {
   padding-left: 20px;
-  margin-bottom: 20px;
+}
+.info-rules-list li {
+  color: #ccc;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.info-sub-list {
+  padding-left: 20px;
+  font-size: 13px;
+  color: #999 !important;
+  margin-top: 6px;
+}
+.info-sub-list li {
+  color: #aaa;
+  margin-bottom: 4px;
 }
 
-.info-page-content li {
-  margin-bottom: 10px;
-  color: #e0e0e0;
+.info-page-divider {
+  border: 0;
+  border-top: 1px solid #222;
+  margin: 20px 0;
 }
 
-/* Enlaces dentro del texto */
-.info-page-content a {
+.info-section-block a {
   color: #ff007f;
   text-decoration: none;
   font-weight: bold;
 }
-.info-page-content a:hover {
+.info-section-block a:hover {
   text-decoration: underline;
 }
 
-/* Ejemplos de colores (Se quedan igual porque ya los tenías perfectos) */
+/* Ejemplos de colores */
 .example-row {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 6px;
+}
+.example-row p {
+  margin: 0;
 }
 .example-box {
   width: 80px;
@@ -259,6 +306,33 @@
   font-weight: bold;
   border-radius: 4px;
   font-size: 12px;
+}
+
+/* Texto del Disclaimer abajo del todo */
+.info-disclaimer {
+  font-size: 11px;
+  color: #666;
+  margin-top: 60px;
+  line-height: 1.4;
+}
+
+/* 📱 ADAPTACIÓN PARA MÓVILES */
+@media (max-width: 768px) {
+  .info-page-layout {
+    flex-direction: column; /* El menú se pone arriba y el texto abajo */
+    gap: 20px;
+  }
+  .info-sidebar {
+    width: 100%;
+    flex-direction: row; /* Botones en fila horizontal con scroll */
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  .sidebar-btn {
+    white-space: nowrap; /* Evita que el texto de los botones se rompa en dos líneas */
+    padding: 10px 14px;
+    font-size: 13px;
+  }
 }
 
 /* -------------- STYLES - ModelResult -------------- */
