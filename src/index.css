@@ -161,95 +161,81 @@
   border-radius: 10px;
 }
 
-/* -------------- STYLES - InfoModal -------------- */
-/* Fondo oscuro translúcido detrás del modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.30);
+/* -------------- STYLES - InfoPage -------------- */
+
+/* Contenedor exterior que centra la página con un margen superior elegante */
+.info-page-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
-/* Caja del contenido del modal */
-.modal-content {
+/* Caja del contenido (antiguo modal-content) */
+.info-container {
   background-color: #121212;
   color: white;
   border-radius: 15px;
   border: 2px solid #ff007f;
   width: 90%;
   max-width: 750px;
-  max-height: 85vh; 
+  /* Mantiene la altura máxima controlada para usar tu scroll personalizado */
+  max-height: 75vh; 
   display: flex;
   flex-direction: column; 
   overflow: hidden;
   box-shadow: 0 0 25px rgba(255, 0, 127, 0.3);
-  position: relative;
 }
 
-.modal-content h2 {
+.info-container h2 {
   color: #ff007f;
   margin-top: 0;
   text-align: center;
 }
 
-.modal-content hr {
+.info-container h3 {
+  color: #ff007f;
+  margin-top: 15px;
+}
+
+.info-container hr {
   border: 0;
   border-top: 1px solid #333;
   margin: 15px 0;
 }
 
-/* Cabecera Fija del Modal */
-.modal-header {
+/* Cabecera de la sección */
+.info-header {
   padding: 25px 25px 10px 25px;
   background-color: #121212; 
   border-radius: 15px 15px 0 0;
 }
 
-/* Cuerpo del Modal */
-.modal-body {
+/* Cuerpo con scroll */
+.info-body {
   padding: 0 25px 25px 25px; 
-  overflow-y: auto; /* scroll */
+  overflow-y: auto;
   flex-grow: 1;
 }
 
-/* Estilo para la barra de scroll*/
-.modal-body::-webkit-scrollbar {
+/* Estilo para la barra de scroll de Monster High que ya tenías */
+.info-body::-webkit-scrollbar {
   width: 8px;
 }
-.modal-body::-webkit-scrollbar-track {
+.info-body::-webkit-scrollbar-track {
   background: #1a1a1a;
 }
-.modal-body::-webkit-scrollbar-thumb {
+.info-body::-webkit-scrollbar-thumb {
   background: #ff007f;
   border-radius: 10px;
 }
-.modal-body::-webkit-scrollbar-thumb:hover {
+.info-body::-webkit-scrollbar-thumb:hover {
   background: #ff3399;
 }
 
-/* Botón de cerrar (X) */
-.close-button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  color: #aaa;
-  font-size: 28px;
-  cursor: pointer;
-}
-.close-button:hover {
-  color: #ff007f;
-}
-
-/* Ejemplos de colores */
+/* Ejemplos de colores (Se mantienen intactos) */
 .example-row {
   display: flex;
   align-items: center;
@@ -267,25 +253,6 @@
 .text-partial {
   color: #ffc107;
   font-weight: bold;
-}
-
-/* Botón de aceptar */
-.start-button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  background-color: #ff007f;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.2s;
-}
-.start-button:hover {
-  background-color: #cc0066;
 }
 
 /* -------------- STYLES - ModelResult -------------- */

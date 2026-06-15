@@ -2,20 +2,18 @@ import React from 'react';
 
 const InfoPage = () => {
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content info-modal" onClick={(e) => e.stopPropagation()}>
+    <div className="info-page-wrapper">
+      <div className="info-container">
       
-        <div className="modal-header">
-          <button className="close-button" onClick={onClose}>&times;</button>
+        <div className="info-header">
           <h2>MonsterHighdle - Rules</h2>
           <p>I've put together the rules I used to create the game so you can have a better gaming experience!</p>
           <hr />
         </div>
 
-        <div className="modal-body">
+        <div className="info-body">
           <h3>Based on G1 Characters and Storyline</h3>
-
-          <p><i>No hate to other generations!</i> Since I'm mainly a G1 fan, I felt more comfortable relying on the G1 data to create the game. For more specific information, keep reading! </p>
+          <p><i>No hate to other generations!</i> Since I'm mainly a G1 fan, I felt more comfortable relying on the G1 data to create the game. For more specific information, keep reading!</p>
           
 
           <h4>What characters are included?</h4>
@@ -54,7 +52,6 @@ const InfoPage = () => {
           <p>Being shown a Skullette image, you have to guess which character it belongs to.<br/>The image is first shown with a black and white filter which can be deactivated to make the game easier.</p>
 
 
-
           <h3>Color meaning:</h3>
           <div className="example-row">
             <div className="example-box correct">Green</div>
@@ -70,14 +67,12 @@ const InfoPage = () => {
           </div>
 
 
-
-          <p style={{ fontSize: '12px', color: '#888', marginTop: '20px' }}>
+          <p style={{ fontSize: '12px', color: '#888', marginTop: '40px' }}>
             <i>Disclaimer: MonsterHighdle is a free fan-made game made by a fan for fans in which I get no profit from. It's not affiliated with or endorsed by Mattel, Inc. Monster High and all related trademarks are the property of Mattel.</i>
           </p>
     
         </div>
 
-        <button className="start-button" onClick={onClose}>Got it!</button>
       </div>
     </div>
   );
