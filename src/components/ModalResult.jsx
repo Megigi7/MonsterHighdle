@@ -51,12 +51,11 @@ const ModalResult = ({ isOpen, isWon, secretCharacter, guesses, onClose }) => {
             : 'Don\'t worry, you\'ll do better next time!'}
         </p>
 
-        <div className="secret-reveal" style={{ margin: '20px 0', padding: '15px', backgroundColor: '#1a1a1a', borderRadius: '10px', border: '1px solid #333' }}>
+        <div className="secret-reveal">
           <p style={{ color: '#aaa', margin: '0 0 10px 0' }}>The secret character was:</p>
           <img 
             src={secretCharacter.image} 
             alt={secretCharacter.name} 
-            style={{ width: '100px', height: '100px', borderRadius: '50%', border: '3px solid #ff007f', objectFit: 'cover' }} 
           />
           <h3 style={{ margin: '10px 0 0 0', fontSize: '22px' }}>{secretCharacter.name}</h3>
         </div>

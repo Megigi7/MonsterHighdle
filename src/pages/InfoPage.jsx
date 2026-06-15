@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import characters from '../data/characters.json';
+import doll_lines from '../data/dollLines.json';
 
 const InfoPage = () => {
   // Estado para saber qué sección está viendo el usuario (por defecto: 'general')
@@ -33,6 +35,18 @@ const InfoPage = () => {
         >
           🎨 Color Meaning
         </button>
+        <button 
+          className={`sidebar-btn ${activeSection === 'characters' ? 'active' : ''}`}
+          onClick={() => setActiveSection('characters')}
+        >
+          👥 Included Characters
+        </button>
+        <button 
+          className={`sidebar-btn ${activeSection === 'doll_lines' ? 'active' : ''}`}
+          onClick={() => setActiveSection('doll_lines')}
+        >
+          👠 Doll lines Included
+        </button>
       </aside>
 
       {/* 📝 CONTENIDO DE LA DERECHA (Cambia dinámicamente) */}
@@ -51,6 +65,7 @@ const InfoPage = () => {
             
             <h4>What characters are included?</h4>
             <p>Based on the <a href="https://monsterhigh.fandom.com/wiki/Characters" target="_blank" rel="noopener noreferrer">wiki</a> G1 characters list, I've put together the most popular and recognizable characters from G1, including students, teachers, and other notable characters.</p>
+
           </div>
         )}
 
@@ -119,10 +134,50 @@ const InfoPage = () => {
           </div>
         )}
 
-        {/* El Disclaimer se queda fijo abajo del panel de información */}
-        <p className="info-disclaimer">
-          <i>Disclaimer: MonsterHighdle is a free fan-made game made by a fan for fans in which I get no profit from. It's not affiliated with or endorsed by Mattel, Inc. Monster High and all related trademarks are the property of Mattel.</i>
-        </p>
+        {/* SECCIÓN: INCLUDED CHARACTERS */}
+        {activeSection === 'characters' && (
+          <div className="info-section-block">
+            <h2 className="info-section-title">👥 Included Characters ({characters.length})</h2>
+            <p>Here is the official character list included in the game. Use it to check correct name spellings if you get stuck!</p>
+            
+            {/* Cuadrícula mapeada directamente desde tu JSON */}
+            <div className="characters-grid">
+              {characters.map((char, index) => (
+                <div key={char.id || index} className="character-card">
+                  <img 
+                    src={char.image} 
+                    alt={char.name} 
+                    className="character-card-img"
+                  />
+                  <span className="character-card-name">{char.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* SECCIÓN: DOLL LINES INCLUDED */}
+        {activeSection === 'doll_lines' && (
+          <div className="info-section-block">
+            <h2 className="info-section-title">👠 Doll lines Included ({doll_lines.length})</h2>
+            <p>Here is the official doll lines list included in the game.</p>
+            
+            {/* Cuadrícula mapeada directamente desde tu JSON */}
+            <div className="doll_lines-grid">
+              {/* {doll_lines.map((line, index) => (
+                <div key={line.id || index} className="character-card">
+                  <img 
+                    src={line.image} 
+                    alt={line.name} 
+                    className="character-card-img"
+                  />
+                  <span className="character-card-name">{char.name}</span>
+                </div>
+              ))} */}
+            </div>
+          </div>
+        )}
+
 
       </section>
 

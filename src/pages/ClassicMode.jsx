@@ -14,7 +14,6 @@ const ClassicMode = () => {
   const [gameStatus, setGameStatus] = useState('playing'); // 'playing' o 'won'
   
   // Control de Modales
-  const [isInfoOpen, setIsInfoOpen] = useState(true); // Se abre automáticamente al entrar
   const [isResultOpen, setIsResultOpen] = useState(false);
 
   // --- PASO INICIAL: Elegir el personaje secreto ---

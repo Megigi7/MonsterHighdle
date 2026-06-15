@@ -161,181 +161,73 @@
   border-radius: 10px;
 }
 
-/* -------------- STYLES - InfoPage (Tabbed Layout) -------------- */
-
-/* Contenedor principal que divide la pantalla en dos columnas */
-.info-page-layout {
-  display: flex;
-  max-width: 1000px;
-  width: 95%;
-  margin: 30px auto;
-  gap: 40px;
-  color: white;
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
-
-/* 🧭 MENÚ LATERAL */
-.info-sidebar {
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-shrink: 0; /* Evita que el menú se encoja en pantallas medianas */
-}
-
-/* Botones del menú lateral */
-.sidebar-btn {
-  background: #121212;
-  color: #aaa;
-  border: 1px solid #333;
-  padding: 14px 18px;
-  border-radius: 8px;
-  text-align: left;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.sidebar-btn:hover {
-  color: white;
-  border-color: #ff007f;
-  background-color: #1a0812;
-}
-
-/* 🌸 PESTAÑA ACTIVA (Estilo Neón Seleccionado) */
-.sidebar-btn.active {
-  color: white;
-  background-color: #121212;
-  border: 2px solid #ff007f;
-  box-shadow: 0 0 12px rgba(255, 0, 127, 0.4);
-}
-
-/* 📝 PANEL DE CONTENIDO (Derecha) */
-.info-content-panel {
-  flex-grow: 1;
-  background-color: #121212;
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #222;
-  min-height: 400px;
-}
-
-/* Títulos internos de las secciones */
-.info-section-title {
-  color: #ff007f;
-  font-size: 28px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.info-section-block h3 {
-  color: #ff007f;
-  font-size: 20px;
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.info-section-block h4 {
-  color: white;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
-
-.info-section-block p {
-  color: #ccc;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  font-size: 15px;
-}
-
-/* Listas */
-.info-rules-list {
-  padding-left: 20px;
-}
-.info-rules-list li {
-  color: #ccc;
-  margin-bottom: 12px;
-  line-height: 1.5;
-}
-.info-sub-list {
-  padding-left: 20px;
-  font-size: 13px;
-  color: #999 !important;
-  margin-top: 6px;
-}
-.info-sub-list li {
-  color: #aaa;
-  margin-bottom: 4px;
-}
-
-.info-page-divider {
-  border: 0;
-  border-top: 1px solid #222;
-  margin: 20px 0;
-}
-
-.info-section-block a {
-  color: #ff007f;
-  text-decoration: none;
-  font-weight: bold;
-}
-.info-section-block a:hover {
-  text-decoration: underline;
-}
-
-/* Ejemplos de colores */
-.example-row {
+/* -------------- STYLES - ModalResult -------------- */
+/* Fondo oscuro translúcido detrás del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.30);
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-  background: #1a1a1a;
-  padding: 10px;
-  border-radius: 6px;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
 }
-.example-row p {
-  margin: 0;
+
+/* Caja del contenido del modal */
+.modal-content {
+  background-color: #121212;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid #ff007f;
+  width: 90%;
+  max-width: 750px;
+  max-height: 85vh; 
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.3);
+  position: relative;
 }
-.example-box {
-  width: 80px;
-  padding: 6px;
+
+.modal-content h2 {
+  color: #ff007f;
+  margin-top: 0;
   text-align: center;
-  font-weight: bold;
-  border-radius: 4px;
-  font-size: 12px;
+}
+/* Botón de cerrar (X) */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 28px;
+  cursor: pointer;
+}
+.close-button:hover {
+  color: #ff007f;
 }
 
-/* Texto del Disclaimer abajo del todo */
-.info-disclaimer {
-  font-size: 11px;
-  color: #666;
-  margin-top: 60px;
-  line-height: 1.4;
-}
-
-/* 📱 ADAPTACIÓN PARA MÓVILES */
-@media (max-width: 768px) {
-  .info-page-layout {
-    flex-direction: column; /* El menú se pone arriba y el texto abajo */
-    gap: 20px;
-  }
-  .info-sidebar {
-    width: 100%;
-    flex-direction: row; /* Botones en fila horizontal con scroll */
-    overflow-x: auto;
-    padding-bottom: 8px;
-  }
-  .sidebar-btn {
-    white-space: nowrap; /* Evita que el texto de los botones se rompa en dos líneas */
-    padding: 10px 14px;
-    font-size: 13px;
+.secret-reveal{
+  margin: 20px 0; 
+  padding: 15px; 
+  background-color: #1a1a1a; 
+  border-radius: 10px; 
+  border: 1px solid #333; 
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ff007f; 
+    object-fit: cover
   }
 }
 
-/* -------------- STYLES - ModelResult -------------- */
 /* Botón de compartir resultados */
 .share-button {
   display: block;
@@ -621,4 +513,180 @@ body {
   transform: scale(1); /* Volvemos al tamaño normal */
   filter: brightness(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3)); /* Recupera el color y añade brillo */
   transition: all 0.6s ease-in-out;
+}
+
+
+/* ==========================================================================
+   PAGES - Info Page
+   ========================================================================== */
+/* Contenedor principal que divide la pantalla en dos columnas */
+.info-page-layout {
+  display: flex;
+  max-width: 1000px;
+  width: 95%;
+  margin: 30px auto;
+  gap: 40px;
+  color: white;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* 🧭 MENÚ LATERAL */
+.info-sidebar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0; /* Evita que el menú se encoja en pantallas medianas */
+}
+
+/* Botones del menú lateral */
+.sidebar-btn {
+  background: #121212;
+  color: #aaa;
+  border: 1px solid #333;
+  padding: 14px 18px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-btn:hover {
+  color: white;
+  border-color: #ff007f;
+  background-color: #1a0812;
+}
+
+/* 🌸 PESTAÑA ACTIVA (Estilo Neón Seleccionado) */
+.sidebar-btn.active {
+  color: white;
+  background-color: #121212;
+  border: 2px solid #ff007f;
+  box-shadow: 0 0 12px rgba(255, 0, 127, 0.4);
+}
+
+/* 📝 PANEL DE CONTENIDO (Derecha) */
+.info-content-panel {
+  flex-grow: 1;
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  min-height: 400px;
+}
+
+/* Títulos internos de las secciones */
+.info-section-title {
+  color: #ff007f;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.info-section-block h3 {
+  color: #ff007f;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.info-section-block h4 {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.info-section-block p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+/* Listas */
+.info-rules-list {
+  padding-left: 20px;
+}
+.info-rules-list li {
+  color: #ccc;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.info-sub-list {
+  padding-left: 20px;
+  font-size: 13px;
+  color: #999 !important;
+  margin-top: 6px;
+}
+.info-sub-list li {
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.info-page-divider {
+  border: 0;
+  border-top: 1px solid #222;
+  margin: 20px 0;
+}
+
+.info-section-block a {
+  color: #ff007f;
+  text-decoration: none;
+  font-weight: bold;
+}
+.info-section-block a:hover {
+  text-decoration: underline;
+}
+
+/* Ejemplos de colores */
+.example-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 6px;
+}
+.example-row p {
+  margin: 0;
+}
+.example-box {
+  width: 80px;
+  padding: 6px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Texto del Disclaimer abajo del todo */
+.info-disclaimer {
+  font-size: 11px;
+  color: #666;
+  margin-top: 60px;
+  line-height: 1.4;
+}
+
+/* 📱 ADAPTACIÓN PARA MÓVILES */
+@media (max-width: 768px) {
+  .info-page-layout {
+    flex-direction: column; /* El menú se pone arriba y el texto abajo */
+    gap: 20px;
+  }
+  .info-sidebar {
+    width: 100%;
+    flex-direction: row; /* Botones en fila horizontal con scroll */
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  .sidebar-btn {
+    white-space: nowrap; /* Evita que el texto de los botones se rompa en dos líneas */
+    padding: 10px 14px;
+    font-size: 13px;
+  }
 }
