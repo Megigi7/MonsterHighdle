@@ -440,8 +440,8 @@
     "nDolls": 1,
     "hasPet": "No",
     "hairColor": "Pink / Blue",
-    "image": "images/character-images/kjersti_trollsøn.png",
-    "skullete": "images/character-skulletes/kjersti_trollsøn.png"
+    "image": "images/character-images/kjersti_trollson.png",
+    "skullete": "images/character-skulletes/kjersti_trollson.png"
   },
   {
     "id": "lorna-mcnessie",
