@@ -4,7 +4,7 @@ import ModeMenu from './pages/ModeMenu';
 import ClassicMode from './pages/ClassicMode';
 import SkulletteMode from './pages/SkulletteMode';
 import SilhouetteMode from './pages/SilhouetteMode';
-import InfoModal from './components/InfoModal';
+import InfoPage from './pages/InfoPage';
 
 
 
@@ -35,13 +35,31 @@ const NavigationHeader = ({ onOpenInfo }) => {
       <h1 className="game-title">MonsterHighdle</h1>
 
       {/* Botón de Ayuda Global */}
-      <button 
-        className="info-trigger-button"
-        onClick={onOpenInfo}
-        style={{ position: 'absolute', right: '0', top: '50%', transform: 'translateY(-50%)', background: 'none', border: '1px solid #ff007f', color: '#ff007f', borderRadius: '50%', width: '35px', height: '35px', cursor: 'pointer', fontWeight: 'bold' }}
-      >
-        ?
-      </button>
+        {location.pathname !== '/info' && (
+          <Link 
+            to="/info"
+            className="info-trigger-button"
+            style={{ 
+              position: 'absolute', 
+              right: '0', 
+              top: '50%', 
+              transform: 'translateY(-50%)', 
+              border: '1px solid #ff007f', 
+              color: '#ff007f', 
+              borderRadius: '50%', 
+              width: '35px', 
+              height: '35px', 
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer', 
+              fontWeight: 'bold',
+              textDecoration: 'none'
+            }}
+          >
+            ?
+          </Link>
+        )}
     </header>
   );
 };
@@ -73,14 +91,12 @@ const AppContent = () => {
             <Route path="/classic" element={<ClassicMode />} />
             <Route path="/skullette" element={<SkulletteMode />} />
             <Route path="/silhouette" element={<SilhouetteMode />} />
+            <Route path="/info" element={<InfoPage />} />
 
             {/* RED DE SEGURIDAD: Si escriben cualquier otra cosa, los manda al menú principal */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
-
-        {/* MODAL DE INFO GLOBAL: Sigue funcionando igual */}
-        <InfoModal isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} />
 
         {/* Pie de página con el Disclaimer Legal */}
         <footer className="app-footer">
