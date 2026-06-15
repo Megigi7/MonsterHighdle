@@ -5,6 +5,13 @@ import ModalResult from '../components/ModalResult';
 import GuessesList from '../components/GuessesList';
 import { getRandomElement } from '../utils/gameLogic';
 
+// FILTRO: Filtramos los personajes que SÍ tienen Skullette válido
+// Ignoramos los que tengan "No", estén vacíos "", o tengan cualquier valor nulo.
+const charactersWithSkullette = charactersData.filter(
+  (char) => char.skullette && char.skullette.trim().toLowerCase() !== 'no'
+);
+
+
 const SkulletteMode = () => {
   const [secretCharacter, setSecretCharacter] = useState(null);
   const [guesses, setGuesses] = useState([]);
@@ -16,7 +23,7 @@ const SkulletteMode = () => {
 
   // Elegir el Skullette secreto al cargar la página
   useEffect(() => {
-    const randomCharacter = getRandomElement(charactersData);
+    const randomCharacter = getRandomElement(charactersWithSkullette);
     setSecretCharacter(randomCharacter);
   }, []);
 
@@ -69,7 +76,7 @@ const SkulletteMode = () => {
       {/* Buscador de personajes */}
       {gameStatus === 'playing' ? (
         <SearchBar 
-          allCharacters={charactersData} 
+          allCharacters={charactersWithSkullette} 
           onSelectCharacter={handleSelectCharacter} 
           alreadyGuessed={guesses.map(g => g.name)}
         />
