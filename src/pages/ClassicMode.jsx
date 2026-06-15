@@ -5,6 +5,7 @@ import Board from '../components/Board';
 import InfoModal from '../components/InfoModal';
 import ModalResult from '../components/ModalResult';
 import { getRandomElement } from '../utils/gameLogic';
+import { Link } from 'react-router-dom';
 
 const ClassicMode = () => {
   // --- ESTADOS DEL JUEGO ---

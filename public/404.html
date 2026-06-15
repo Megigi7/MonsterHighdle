@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MonsterHighdle</title>
+    <script type="text/javascript">
+      // Este script guarda la URL original que causó el 404 
+      // y redirige al index.html con esa información oculta en los parámetros
+      var pathSegmentsToKeep = 1; // Pon 1 si tu proyecto está en un subdominio como /MonsterHighdle
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    </body>
+</html>

@@ -4,6 +4,7 @@ import SearchBar from '../components/SearchBar';
 import ModalResult from '../components/ModalResult';
 import GuessesList from '../components/GuessesList';
 import { getRandomElement } from '../utils/gameLogic';
+import { Link } from 'react-router-dom';
 
 // FILTRO: Filtramos los personajes que SÍ tienen Skullette válido
 // Ignoramos los que tengan "No", estén vacíos "", o tengan cualquier valor nulo.
