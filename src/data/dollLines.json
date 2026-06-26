@@ -1,6 +1,34 @@
 [
   {
-    "id": 1,
-    "name": "Signature"
+    "id": "signature",
+    "name": "Signature",
+    "dolls": [
+      {
+        "doll_id": "clawdeen-wolf-signature",
+        "character_id": "clawdeen-wolf",
+        "doll_image": "/images/dolls/clawdeen_sig.png"
+      },
+      {
+        "doll_id": "draculaura-signature",
+        "character_id": "draculaura",
+        "doll_image": "/images/dolls/drac_sig.png"
+      }
+    ]
+  },
+  {
+    "id": "schools-out",
+    "name": "School's Out",
+    "dolls": [
+      {
+        "doll_id": "clawdeen-wolf-schools-out",
+        "character_id": "clawdeen-wolf",
+        "doll_image": "/images/dolls/clawdeen_so.png"
+      },
+      {
+        "doll_id": "frankie-stein-schools-out",
+        "character_id": "frankie-stein",
+        "doll_image": "/images/dolls/frankie_so.png"
+      }
+    ]
   }
 ]
